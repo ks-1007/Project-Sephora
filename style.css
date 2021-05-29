@@ -104,6 +104,7 @@ nav > div:nth-child(2) a {
 #container {
   max-width: 1200px;
   margin: auto;
+  text-align: center;
 }
 #beautyMustHaves {
   height: 520px;
@@ -145,4 +146,32 @@ a {
 #beautyMustHaves > div > a {
   height: 300px;
   width: 300px;
+}
+.productList {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  width: 1000px;
+  /* background-color: burlywood; */
+  margin: auto;
+  /* justify-content: space-around; */
+  overflow-x: scroll;
+}
+.productList > div {
+  /* width: 150px; */
+  /* background-color: blueviolet; */
+  margin: 3.5%;
+  text-align: center;
+  /* width: 300px; */
+}
+.productList > div > div > p {
+  font-size: 13px;
+  font-weight: 500;
+}
+.productList > div > div > a > p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 500;
+}
+.productList p {
+  margin: 0px;
 }
