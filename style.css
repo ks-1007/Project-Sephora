@@ -175,3 +175,19 @@ a {
 .productList p {
   margin: 0px;
 }
+#container > div:nth-child(3) {
+  /* <!-- advertisements images --> */
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  width: 82%;
+  margin: auto;
+}
+#container > div:nth-child(8) > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
