@@ -155,7 +155,7 @@ a {
   /* background-color: burlywood; */
   margin: auto;
   /* justify-content: space-around; */
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 .productList > div {
   /* width: 150px; */
@@ -163,6 +163,7 @@ a {
   margin: 3.5%;
   text-align: center;
   /* width: 300px; */
+  display: none;
 }
 .productList > div > div > p {
   font-size: 13px;
@@ -190,4 +191,7 @@ a {
   justify-content: space-between;
   width: 80%;
   margin: auto;
+}
+.display {
+  display: block !important;
 }
