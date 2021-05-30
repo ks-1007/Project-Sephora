@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sephora</title>
-    <script
-      src="https://kit.fontawesome.com/6eee51f964.js"
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
       crossorigin="anonymous"
-    ></script>
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -122,7 +123,7 @@
           </a>
         </div> -->
       </div>
-      <div>
+      <div class="productCont">
         <h2>New Arrivals</h2>
         <div class="productList">
           <div class="list1 display">
@@ -396,9 +397,15 @@
             </div>
           </div>
         </div>
-        <button onclick="prevBtn('list1')">prev</button>
-        <button onclick="nextBtn('list1')">next</button>
+
+        <button id="prevBtn" onclick="prevBtn1('list1')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="nextBtn" onclick="nextBtn1('list1')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
+
       <div>
         <!-- advertisements images -->
         <div>
@@ -416,10 +423,10 @@
           /></a>
         </div>
       </div>
-      <div>
+      <div class="productCont">
         <h2>Selling Fast</h2>
         <div class="productList">
-          <div>
+          <div class="list2 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2452266-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -434,7 +441,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2426930-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -449,7 +456,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1237379-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -460,11 +467,11 @@
               <p>online only</p>
               <a href="">
                 <p>Youth to the People</p>
-                <p>Superfood Antioxidant Cleanser</p>
+                <p>Antioxidant Cleanser</p>
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2305480-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -479,7 +486,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2323202-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -494,7 +501,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1966258-main-zoom.jpg?imwidth=135&pb=2020-03-allure-best-2019&imwidth=97"
@@ -509,7 +516,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2420040-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -524,7 +531,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2033264-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -539,7 +546,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2421600-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -554,7 +561,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2413334-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -569,7 +576,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2436632-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -584,7 +591,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2372530-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -599,7 +606,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1962141-main-zoom.jpg?imwidth=135&pb=2020-03-allure-best-2019&imwidth=97"
@@ -614,7 +621,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2314961-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -629,7 +636,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2456275-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -644,7 +651,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2418945-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -659,7 +666,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2456374-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -674,7 +681,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list2">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2452266-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -690,11 +697,18 @@
             </div>
           </div>
         </div>
+
+        <button id="prevBtn" onclick="prevBtn2('list2')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="nextBtn" onclick="nextBtn2('list2')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
-      <div>
-        <h2>Value Set</h2>
+      <div class="productCont">
+        <h2>Value Sets</h2>
         <div class="productList">
-          <div>
+          <div class="list3 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2452266-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -709,7 +723,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2426930-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -724,7 +738,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1237379-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -735,11 +749,11 @@
               <p>online only</p>
               <a href="">
                 <p>Youth to the People</p>
-                <p>Superfood Antioxidant Cleanser</p>
+                <p>Antioxidant Cleanser</p>
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2305480-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -754,7 +768,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2323202-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -769,7 +783,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1966258-main-zoom.jpg?imwidth=135&pb=2020-03-allure-best-2019&imwidth=97"
@@ -784,7 +798,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2420040-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -799,7 +813,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2033264-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -814,7 +828,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2421600-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -829,7 +843,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2413334-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -844,7 +858,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2436632-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -859,7 +873,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2372530-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -874,7 +888,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1962141-main-zoom.jpg?imwidth=135&pb=2020-03-allure-best-2019&imwidth=97"
@@ -889,7 +903,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2314961-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -904,7 +918,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2456275-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -919,7 +933,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2418945-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -934,7 +948,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2456374-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -949,7 +963,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list3">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2452266-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -965,11 +979,18 @@
             </div>
           </div>
         </div>
+
+        <button id="prevBtn" onclick="prevBtn3('list3')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="nextBtn" onclick="nextBtn3('list3')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
-      <div>
+      <div class="productCont">
         <h2>Recommended For You</h2>
         <div class="productList">
-          <div>
+          <div class="list4 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2452266-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -984,7 +1005,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2426930-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -999,7 +1020,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1237379-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1010,11 +1031,11 @@
               <p>online only</p>
               <a href="">
                 <p>Youth to the People</p>
-                <p>Superfood Antioxidant Cleanser</p>
+                <p>Antioxidant Cleanser</p>
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2305480-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1029,7 +1050,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2323202-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1044,7 +1065,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1966258-main-zoom.jpg?imwidth=135&pb=2020-03-allure-best-2019&imwidth=97"
@@ -1059,7 +1080,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2420040-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1074,7 +1095,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2033264-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -1089,7 +1110,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2421600-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -1104,7 +1125,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2413334-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1119,7 +1140,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2436632-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -1134,7 +1155,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2372530-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1149,7 +1170,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1962141-main-zoom.jpg?imwidth=135&pb=2020-03-allure-best-2019&imwidth=97"
@@ -1164,7 +1185,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2314961-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1179,7 +1200,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2456275-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1194,7 +1215,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2418945-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1209,7 +1230,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2456374-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1224,7 +1245,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list4">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2452266-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -1240,11 +1261,18 @@
             </div>
           </div>
         </div>
+
+        <button id="prevBtn" onclick="prevBtn4('list4')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="nextBtn" onclick="nextBtn4('list4')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
-      <div>
+      <div class="productCont">
         <h2>Beauty Insider Rewards</h2>
         <div class="productList">
-          <div>
+          <div class="list5 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2452266-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -1259,7 +1287,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2426930-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1274,7 +1302,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1237379-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1285,11 +1313,11 @@
               <p>online only</p>
               <a href="">
                 <p>Youth to the People</p>
-                <p>Superfood Antioxidant Cleanser</p>
+                <p>Antioxidant Cleanser</p>
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2305480-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1304,7 +1332,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2323202-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1319,7 +1347,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5 display">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1966258-main-zoom.jpg?imwidth=135&pb=2020-03-allure-best-2019&imwidth=97"
@@ -1334,7 +1362,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2420040-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1349,7 +1377,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2033264-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -1364,7 +1392,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2421600-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -1379,7 +1407,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2413334-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1394,7 +1422,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2436632-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -1409,7 +1437,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2372530-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1424,7 +1452,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s1962141-main-zoom.jpg?imwidth=135&pb=2020-03-allure-best-2019&imwidth=97"
@@ -1439,7 +1467,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2314961-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1454,7 +1482,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2456275-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1469,7 +1497,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2418945-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1484,7 +1512,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2456374-main-zoom.jpg?imwidth=135&imwidth=97"
@@ -1499,7 +1527,7 @@
               </a>
             </div>
           </div>
-          <div>
+          <div class="list5">
             <div>
               <img
                 src="https://www.sephora.com/productimages/sku/s2452266-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
@@ -1515,6 +1543,13 @@
             </div>
           </div>
         </div>
+
+        <button id="prevBtn" onclick="prevBtn5('list5')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="nextBtn" onclick="nextBtn5('list5')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
       <div>
         <h2>More Beauty For You</h2>
