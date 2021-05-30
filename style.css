@@ -21,7 +21,9 @@ nav > div:nth-child(1) {
   line-height: 18px;
   font-weight: 400;
 }
-
+nav > div > div {
+  cursor: pointer;
+}
 nav > div:nth-child(1) > div:nth-child(2) {
   /* search box div*/
   width: 36%;
@@ -111,12 +113,14 @@ nav > div:nth-child(2) a {
   background-color: rgb(193, 207, 195);
   margin-top: 0px;
   text-align: center;
+  margin-bottom: 30px;
 }
 #beautyMustHaves h1 {
-  font-size: 75px;
+  font-size: 60px;
   text-align: center;
-  font-weight: 50;
+  font-weight: 100;
   margin: 0px;
+  font-family: "Bodoni Moda", serif;
 }
 #beautyMustHaves h3 {
   margin-top: 10px;
@@ -156,13 +160,16 @@ a {
   margin: auto;
   /* justify-content: space-around; */
   overflow-x: hidden;
+  margin-bottom: 50px;
+  justify-content: space-around;
 }
 .productList > div {
   /* width: 150px; */
   /* background-color: blueviolet; */
-  margin: 3.5%;
+  /* margin: 3.5%; */
   text-align: center;
   /* width: 300px; */
+  width: 12.5%;
   display: none;
 }
 .productList > div > div > p {
@@ -184,6 +191,7 @@ a {
   justify-content: space-between;
   width: 82%;
   margin: auto;
+  margin-bottom: 40px;
 }
 #container > div:nth-child(8) > div {
   display: flex;
@@ -218,4 +226,10 @@ button {
   border: none;
   font-weight: lighter;
   cursor: pointer;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 10px;
+  font-family: "Bodoni Moda", serif;
 }
