@@ -107,6 +107,7 @@ nav > div:nth-child(2) a {
   max-width: 1200px;
   margin: auto;
   text-align: center;
+  margin-bottom: 100px;
 }
 #beautyMustHaves {
   height: 520px;
@@ -143,7 +144,7 @@ nav > div:nth-child(2) a {
   display: flex;
   flex-direction: row;
 }
-a {
+#container a {
   text-decoration: none;
   color: black;
 }
@@ -151,7 +152,7 @@ a {
   height: 300px;
   width: 300px;
 }
-.productList {
+#container .productList {
   display: flex;
   flex-direction: row;
   /* flex-wrap: nowrap; */
@@ -209,17 +210,17 @@ a {
   width: 1100px;
   margin: auto;
 }
-#nextBtn {
+#container #nextBtn {
   position: absolute;
   top: 40%;
   right: 0px;
 }
-#prevBtn {
+#container #prevBtn {
   position: absolute;
   top: 40%;
   left: 0px;
 }
-button {
+#container button {
   background-color: white;
   color: rgb(8, 8, 8);
   height: 100px;
@@ -228,7 +229,7 @@ button {
   font-weight: lighter;
   cursor: pointer;
 }
-h2 {
+#container h2 {
   font-size: 30px;
   font-weight: 200;
   margin-bottom: 10px;
