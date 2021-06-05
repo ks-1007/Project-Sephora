@@ -107,6 +107,7 @@ nav > div:nth-child(2) a {
   max-width: 1200px;
   margin: auto;
   text-align: center;
+  margin-bottom: 100px;
 }
 #beautyMustHaves {
   height: 520px;
@@ -219,7 +220,7 @@ a {
   top: 40%;
   left: 0px;
 }
-/* button {
+#container button {
   background-color: white;
   color: rgb(8, 8, 8);
   height: 100px;
@@ -227,7 +228,7 @@ a {
   border: none;
   font-weight: lighter;
   cursor: pointer;
-} */
+}
 h2 {
   font-size: 30px;
   font-weight: 200;
