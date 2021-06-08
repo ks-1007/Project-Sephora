@@ -65,11 +65,27 @@ nav > div:nth-child(1) p {
 }
 nav > div:nth-child(1) > div:nth-child(5) {
   /* sign in */
+  /* margin: 3%; */
   display: flex;
   flex-direction: row;
   width: 6%;
-  justify-content: space-between;
-  /* margin: 3%; */
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 500;
+  font-style: italic;
+}
+nav > div:nth-child(1) > div:nth-child(5) >div> img {
+  width: 35px;
+}
+nav > div:nth-child(1) > div:nth-child(5) >div> img:hover{
+  border: 2px solid black;
+  border-radius: 50%;
+}
+/* overeffect on signin menu */
+nav > div:nth-child(1) > div:nth-child(5):hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
 }
 nav > div:nth-child(1) > div:nth-child(6) {
   /* heart shape */
