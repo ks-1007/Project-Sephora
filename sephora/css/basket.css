@@ -1,0 +1,36 @@
+#basketCont {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 65% 32%;
+  gap: 2%;
+}
+#left > div:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: 49.5% 49.5%;
+  gap: 1%;
+}
+#left > div:nth-of-type(1) > div {
+  border: 2px solid gray;
+  text-align: center;
+}
+
+#cartCont {
+  min-height: 300px;
+  background-color: gray;
+  padding: 1%;
+}
+
+#cart {
+  background-color: white;
+  min-height: 80%;
+}
+#payment {
+  border: 2px solid gray;
+  padding: 1%;
+  margin: 1%;
+}
+#promo {
+  display: flex;
+  flex-direction: row;
+}
