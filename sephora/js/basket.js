@@ -93,6 +93,7 @@ function addToCart(item) {
 
 let cart = document.getElementById("cart");
 let cartitems = JSON.parse(localStorage.getItem("cartList"));
+
 if (cartitems != null) {
     for (key in cartitems) {
         let parentdiv = document.createElement("div")
@@ -111,7 +112,7 @@ if (cartitems != null) {
         let quantitydiv = document.createElement("div")
         let pricediv = document.createElement("div");
         let removebutton = document.createElement("button");
-        removebutton.innerHTML = `<button onclick="remove(${key})">REMOVE</button>`
+        removebutton.innerHTML = `<button onclick="removeFromCart('${key}')">REMOVE</button>`
         imagediv.append(image);
         infodiv.append(brand, desc)
         quantitydiv.append(quantity)
@@ -119,4 +120,10 @@ if (cartitems != null) {
         parentdiv.append(imagediv, infodiv, quantitydiv, pricediv);
         cart.append(parentdiv);
     }
+}
+
+function removeFromCart(item) {
+    delete cartitems[item];
+    localStorage.setItem("cartList", JSON.stringify(cartitems));
+    document.location.reload()
 }
