@@ -87,7 +87,8 @@ function addToCart(item) {
     } else {
         cartItems[item] = elem;
     }
-    localStorage.setItem("cartList", JSON.stringify(cartItems))
+    localStorage.setItem("cartList", JSON.stringify(cartItems));
+    document.location.reload();
 }
 
 let cart = document.getElementById("cart");
