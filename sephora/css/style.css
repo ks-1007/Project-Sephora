@@ -87,6 +87,9 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
   text-decoration-thickness: 3px;
   text-underline-offset: 2px;
 }
+.signinBtnActive{
+  opacity: 60%;
+}
 nav > div:nth-child(1) > div:nth-child(6) {
   /* heart shape */
   width: 2%;
