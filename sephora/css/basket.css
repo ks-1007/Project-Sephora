@@ -1,0 +1,184 @@
+#basketCont {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 65% 31%;
+  gap: 3%;
+}
+#left > div:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: 49.5% 49.5%;
+  gap: 1%;
+  margin-bottom: 2%;
+}
+#left > div:nth-of-type(1) > div {
+  border: 2px solid rgb(207, 207, 207);
+  text-align: center;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#cartCont {
+  min-height: 200px;
+  background-color: rgb(231, 231, 231);
+  padding: 1%;
+}
+
+#cart {
+  background-color: white;
+  min-height: 150px;
+  width: 98%;
+  margin: auto;
+  margin-top: 1%;
+}
+#payment {
+  border: 2px solid rgb(219, 219, 219);
+  padding: 3%;
+  margin: 1%;
+  height: 300px;
+}
+#payment > div {
+  width: 90%;
+  margin: auto;
+}
+#payment * {
+  margin: 2%;
+}
+#payment > p:nth-of-type(3) {
+  font-size: 14px;
+}
+#payment button {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+
+  margin: 2%;
+  font-size: 15px;
+}
+#payment > div:nth-of-type(3) > button {
+  background-color: rgb(207, 17, 44) !important;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+#payment > div:nth-of-type(4) > button {
+  background-color: white !important;
+  border: 2px solid black;
+  font-weight: bold;
+}
+#payment > div:nth-of-type(1),
+#payment > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#promo {
+  margin-top: 20px;
+}
+#promo > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+}
+#promo > div {
+  margin: 2%;
+}
+#promo > div:nth-of-type(2) > div {
+  margin: 0 2%;
+}
+#promo input {
+  height: 90%;
+  width: 210px;
+  margin-top: 0;
+  font-size: 16px;
+  text-align: center;
+}
+#promo > div:nth-of-type(1) {
+  text-align: right;
+}
+#promo > div > p {
+  font-size: 14px;
+}
+#promo button {
+  height: 90%;
+  border-radius: 24px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+#basketCont hr {
+  margin: 2% 0;
+}
+#left h1,
+#left h3 {
+  margin: 3% 0;
+}
+#right {
+  margin-top: 30%;
+}
+.productCont {
+  width: 100%;
+}
+.productList {
+  width: 100%;
+}
+.productList > div {
+  width: 15%;
+}
+.productCont > button {
+  background-color: white;
+  color: rgb(8, 8, 8);
+  height: 100px;
+  font-size: 60px;
+  border: none;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.productList button {
+  background-color: white;
+  border: 2px solid black;
+  height: 40px;
+  width: 80px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#cart > div {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid rgb(197, 195, 195);
+}
+
+#cart > div > div:nth-of-type(3) {
+  border: 2px solid rgb(199, 199, 199);
+  width: 60px;
+  height: 40px;
+  justify-content: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+#cart > div > div:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+#cart > div > div:nth-of-type(4) button {
+  /* remove button */
+  background-color: white;
+  border: none;
+  color: gray;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -4,26 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sephora</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
-      crossorigin="anonymous"
-    />
+    <title>Cosmetics, Beauty Products, Fragrances &amp; Tools</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet" />
+
+    <!-- main home page stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
     <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> -->
+
     <!-- flaticon- ui_icons cdn-->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <!-- <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'> -->
+
+    <!-- footer style sheet -->
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> -->
+    <!-- flaticon- ui_icons cdn-->
+    <!-- <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'> -->
+
     <link rel="stylesheet" href="./css/footer.css">
   </head>
-  <body>
+  <body id="body">
+
+    <!-- navbar starts -->
     <nav>
       <!-- search box row -->
       <div>
@@ -70,12 +78,36 @@
           <div>
             <!-- logo -->
             <img
-              src="https://www.sephora.com/img/ufe/icons/me-active.svg"
-              alt=""
+              src="https://www.sephora.com/img/ufe/icons/me32.svg" 
+              alt="signin logo" onmouseover="this.src = 'https://www.sephora.com/img/ufe/icons/me-active.svg '  "
+              onmouseout="this.src = 'https://www.sephora.com/img/ufe/icons/me32.svg' "
             />
           </div>
           <div>
-            <p>Sign In</p>
+            <p onclick="signinToggle()">Sign In</p>
+            <div >
+              <ul class="sub_menu">
+                <li class="menu-items signinBtnLogo"><a href="#"><img src="https://community.sephora.com/t5/image/serverpage/avatar-name/default-avatar/avatar-theme/sephora/avatar-collection/sephora/avatar-display-size/profile/version/4" alt="" width="50px"><span>Good Evening Beautiful.<p>Sign in for a more personalized experience.</p></span>
+                </a></li>
+                <li class="menu-items signinBtn"><a href="#"><button>Sign In</button><button>Create Account</button>
+                  </a></li>
+                <li class="menu-items beautyInsider"><a href="#"><span>Beauty insider summery<p>View activity, savings, benifits</p></span><img src="https://www.sephora.com/img/ufe/bi/logo-bi-stacked.svg" alt="" width="60px"></a></li>
+                <li class="menu-items"><a href="#"><span>Rewards Bazar <p>Redeem items,samples,more</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/subscription.svg" alt=""><span>Buy It Again <p>Reorder from in-store and online purches</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/track.svg" alt=""><span>Buy It Again <p>Reorder from in-store and online purches</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/heart.svg" alt=""><span>Buy It Again <p>Reorder from in-store and online purches</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/account.svg" alt=""><span>Buy It Again <p>Reorder from in-store and online purches</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/cc-outline.svg" alt=""><span>Buy It Again <p>Reorder from in-store and online purches</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/flash.svg" alt=""><span>Buy It Again <p>Reorder from in-store and online purches</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/reservations.svg" alt=""><span>Buy It Again <p>Reorder from in-store and online purches</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/traits.svg" alt=""><span>Buy It Again <p>Reorder from in-store and online purches</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/recommendations.svg" alt=""><span>Buy It Again <p>Reorder from in-store and online purches</p></span></a></li>
+                
+              </ul>
+            </div>
+            <!-- <div id="popup_signin">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquid magnam laboriosam laudantium nostrum, a cumque soluta. Officia, distinctio provident.</h2>
+            </div> -->
           </div>
         </div>
         <div>
@@ -88,7 +120,7 @@
         </div>
         <div>
           <!-- basket -->
-          <a href=""
+          <a href="basket.html"
             ><img
               src="https://image.flaticon.com/icons/png/128/2636/2636890.png"
               alt=""
@@ -111,6 +143,10 @@
         <a href="productPage.html">Sale & Offers</a>
       </div>
     </nav>
+    <!-- navbar ends -->
+
+
+    <!-- homepage body starts -->
     <div id="container">
       <div id="beautyMustHaves">
         <!-- this section to be done later -->
@@ -145,7 +181,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>KVD Beauty</p>
                 <p>Everlasting Blush Refills</p>
               </a>
@@ -160,7 +196,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>NARS</p>
                 <p>Puff Painted Liquid Blush</p>
               </a>
@@ -175,7 +211,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Youth to the People</p>
                 <p>Antioxidant Cleanser</p>
               </a>
@@ -190,7 +226,7 @@
             </div>
             <div>
               <p>only at Sephora</p>
-              <a href="">
+              <a href="item.html">
                 <p>Dior</p>
                 <p>Dior Addict Lip Glow</p>
               </a>
@@ -205,7 +241,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Sephora Favourites</p>
                 <p>Vacay All Day Set</p>
               </a>
@@ -220,7 +256,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Fenty Skin</p>
                 <p>Fenty Skin Start'r Set</p>
               </a>
@@ -235,7 +271,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Glow Receipe</p>
                 <p>Fruit Babies Best Seller Kit</p>
               </a>
@@ -250,7 +286,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Ola Pex</p>
                 <p>No. 3 Hair Perfecter</p>
               </a>
@@ -265,7 +301,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Drunk Elephant</p>
                 <p>Vitamin C Day Serum</p>
               </a>
@@ -280,7 +316,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>NARS</p>
                 <p>Radiant Creamy Concealer</p>
               </a>
@@ -295,7 +331,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Peace Out</p>
                 <p>Salicylic Acid Acne Healing Dots</p>
               </a>
@@ -310,7 +346,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>First Aid Beauty</p>
                 <p>KB Bump Eraser Body</p>
               </a>
@@ -325,7 +361,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>CHANEL</p>
                 <p>Chance Eue Tendre</p>
               </a>
@@ -340,7 +376,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Olaplex</p>
                 <p>Bond Maintenance Shampoo</p>
               </a>
@@ -355,7 +391,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>LANEIGE</p>
                 <p>Lip Sleeping Mask</p>
               </a>
@@ -370,7 +406,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Armani Beauty</p>
                 <p>Self Taining Drops</p>
               </a>
@@ -385,7 +421,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>ILIA</p>
                 <p>Super Serum Skin Tint</p>
               </a>
@@ -400,7 +436,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Isle Of Paradise</p>
                 <p>Self Tanning Drops</p>
               </a>
@@ -433,6 +469,7 @@
           /></a>
         </div>
       </div>
+
       <div class="productCont">
         <h2>Selling Fast</h2>
         <div class="productList">
@@ -445,7 +482,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Glow Receipe</p>
                 <p>Fruit Babies Best Seller Kit</p>
               </a>
@@ -460,7 +497,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Ola Pex</p>
                 <p>No. 3 Hair Perfecter</p>
               </a>
@@ -475,7 +512,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Drunk Elephant</p>
                 <p>Vitamin C Day Serum</p>
               </a>
@@ -490,7 +527,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>NARS</p>
                 <p>Radiant Creamy Concealer</p>
               </a>
@@ -505,7 +542,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Peace Out</p>
                 <p>Salicylic Acid Acne Healing Dots</p>
               </a>
@@ -520,7 +557,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>First Aid Beauty</p>
                 <p>KB Bump Eraser Body</p>
               </a>
@@ -535,7 +572,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>KVD Beauty</p>
                 <p>Everlasting Blush Refills</p>
               </a>
@@ -550,7 +587,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>NARS</p>
                 <p>Puff Painted Liquid Blush</p>
               </a>
@@ -565,7 +602,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Youth to the People</p>
                 <p>Antioxidant Cleanser</p>
               </a>
@@ -580,7 +617,7 @@
             </div>
             <div>
               <p>only at Sephora</p>
-              <a href="">
+              <a href="item.html">
                 <p>Dior</p>
                 <p>Dior Addict Lip Glow</p>
               </a>
@@ -595,7 +632,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Sephora Favourites</p>
                 <p>Vacay All Day Set</p>
               </a>
@@ -610,7 +647,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Fenty Skin</p>
                 <p>Fenty Skin Start'r Set</p>
               </a>
@@ -626,7 +663,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>CHANEL</p>
                 <p>Chance Eue Tendre</p>
               </a>
@@ -641,7 +678,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Olaplex</p>
                 <p>Bond Maintenance Shampoo</p>
               </a>
@@ -656,7 +693,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>LANEIGE</p>
                 <p>Lip Sleeping Mask</p>
               </a>
@@ -671,7 +708,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Armani Beauty</p>
                 <p>Self Taining Drops</p>
               </a>
@@ -686,7 +723,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>ILIA</p>
                 <p>Super Serum Skin Tint</p>
               </a>
@@ -701,11 +738,11 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Isle Of Paradise</p>
                 <p>Self Tanning Drops</p>
               </a>
-            </div>
+            </div>item.html
           </div>
         </div>
 
@@ -728,7 +765,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Drunk Elephant</p>
                 <p>Vitamin C Day Serum</p>
               </a>
@@ -743,7 +780,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>NARS</p>
                 <p>Radiant Creamy Concealer</p>
               </a>
@@ -758,7 +795,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Peace Out</p>
                 <p>Salicylic Acid Acne Healing Dots</p>
               </a>
@@ -773,7 +810,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>First Aid Beauty</p>
                 <p>KB Bump Eraser Body</p>
               </a>
@@ -788,7 +825,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>CHANEL</p>
                 <p>Chance Eue Tendre</p>
               </a>
@@ -803,7 +840,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Olaplex</p>
                 <p>Bond Maintenance Shampoo</p>
               </a>
@@ -818,7 +855,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>KVD Beauty</p>
                 <p>Everlasting Blush Refills</p>
               </a>
@@ -833,7 +870,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>NARS</p>
                 <p>Puff Painted Liquid Blush</p>
               </a>
@@ -848,7 +885,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Youth to the People</p>
                 <p>Antioxidant Cleanser</p>
               </a>
@@ -863,7 +900,7 @@
             </div>
             <div>
               <p>only at Sephora</p>
-              <a href="">
+              <a href="item.html">
                 <p>Dior</p>
                 <p>Dior Addict Lip Glow</p>
               </a>
@@ -878,7 +915,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Sephora Favourites</p>
                 <p>Vacay All Day Set</p>
               </a>
@@ -893,7 +930,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Fenty Skin</p>
                 <p>Fenty Skin Start'r Set</p>
               </a>
@@ -908,7 +945,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Glow Receipe</p>
                 <p>Fruit Babies Best Seller Kit</p>
               </a>
@@ -923,7 +960,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Ola Pex</p>
                 <p>No. 3 Hair Perfecter</p>
               </a>
@@ -939,7 +976,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>LANEIGE</p>
                 <p>Lip Sleeping Mask</p>
               </a>
@@ -954,7 +991,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Armani Beauty</p>
                 <p>Self Taining Drops</p>
               </a>
@@ -969,7 +1006,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>ILIA</p>
                 <p>Super Serum Skin Tint</p>
               </a>
@@ -984,7 +1021,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Isle Of Paradise</p>
                 <p>Self Tanning Drops</p>
               </a>
@@ -1011,7 +1048,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>KVD Beauty</p>
                 <p>Everlasting Blush Refills</p>
               </a>
@@ -1026,7 +1063,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>NARS</p>
                 <p>Puff Painted Liquid Blush</p>
               </a>
@@ -1041,7 +1078,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Youth to the People</p>
                 <p>Antioxidant Cleanser</p>
               </a>
@@ -1056,7 +1093,7 @@
             </div>
             <div>
               <p>only at Sephora</p>
-              <a href="">
+              <a href="item.html">
                 <p>Dior</p>
                 <p>Dior Addict Lip Glow</p>
               </a>
@@ -1071,7 +1108,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Sephora Favourites</p>
                 <p>Vacay All Day Set</p>
               </a>
@@ -1086,7 +1123,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Fenty Skin</p>
                 <p>Fenty Skin Start'r Set</p>
               </a>
@@ -1101,7 +1138,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Glow Receipe</p>
                 <p>Fruit Babies Best Seller Kit</p>
               </a>
@@ -1116,7 +1153,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Ola Pex</p>
                 <p>No. 3 Hair Perfecter</p>
               </a>
@@ -1131,7 +1168,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Drunk Elephant</p>
                 <p>Vitamin C Day Serum</p>
               </a>
@@ -1146,7 +1183,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>NARS</p>
                 <p>Radiant Creamy Concealer</p>
               </a>
@@ -1161,7 +1198,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Peace Out</p>
                 <p>Salicylic Acid Acne Healing Dots</p>
               </a>
@@ -1176,7 +1213,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>First Aid Beauty</p>
                 <p>KB Bump Eraser Body</p>
               </a>
@@ -1191,7 +1228,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>CHANEL</p>
                 <p>Chance Eue Tendre</p>
               </a>
@@ -1206,7 +1243,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Olaplex</p>
                 <p>Bond Maintenance Shampoo</p>
               </a>
@@ -1221,7 +1258,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>LANEIGE</p>
                 <p>Lip Sleeping Mask</p>
               </a>
@@ -1236,7 +1273,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Armani Beauty</p>
                 <p>Self Taining Drops</p>
               </a>
@@ -1251,7 +1288,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>ILIA</p>
                 <p>Super Serum Skin Tint</p>
               </a>
@@ -1266,7 +1303,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Isle Of Paradise</p>
                 <p>Self Tanning Drops</p>
               </a>
@@ -1293,7 +1330,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>CHANEL</p>
                 <p>Chance Eue Tendre</p>
               </a>
@@ -1308,7 +1345,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Olaplex</p>
                 <p>Bond Maintenance Shampoo</p>
               </a>
@@ -1323,7 +1360,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>LANEIGE</p>
                 <p>Lip Sleeping Mask</p>
               </a>
@@ -1338,7 +1375,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Armani Beauty</p>
                 <p>Self Taining Drops</p>
               </a>
@@ -1353,7 +1390,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>ILIA</p>
                 <p>Super Serum Skin Tint</p>
               </a>
@@ -1368,7 +1405,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Isle Of Paradise</p>
                 <p>Self Tanning Drops</p>
               </a>
@@ -1383,7 +1420,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>KVD Beauty</p>
                 <p>Everlasting Blush Refills</p>
               </a>
@@ -1398,7 +1435,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>NARS</p>
                 <p>Puff Painted Liquid Blush</p>
               </a>
@@ -1413,7 +1450,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Youth to the People</p>
                 <p>Antioxidant Cleanser</p>
               </a>
@@ -1428,7 +1465,7 @@
             </div>
             <div>
               <p>only at Sephora</p>
-              <a href="">
+              <a href="item.html">
                 <p>Dior</p>
                 <p>Dior Addict Lip Glow</p>
               </a>
@@ -1443,7 +1480,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Sephora Favourites</p>
                 <p>Vacay All Day Set</p>
               </a>
@@ -1458,7 +1495,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Fenty Skin</p>
                 <p>Fenty Skin Start'r Set</p>
               </a>
@@ -1473,7 +1510,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Glow Receipe</p>
                 <p>Fruit Babies Best Seller Kit</p>
               </a>
@@ -1488,7 +1525,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Ola Pex</p>
                 <p>No. 3 Hair Perfecter</p>
               </a>
@@ -1503,7 +1540,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Drunk Elephant</p>
                 <p>Vitamin C Day Serum</p>
               </a>
@@ -1518,7 +1555,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>NARS</p>
                 <p>Radiant Creamy Concealer</p>
               </a>
@@ -1533,7 +1570,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>Peace Out</p>
                 <p>Salicylic Acid Acne Healing Dots</p>
               </a>
@@ -1548,7 +1585,7 @@
             </div>
             <div>
               <p>online only</p>
-              <a href="">
+              <a href="item.html">
                 <p>First Aid Beauty</p>
                 <p>KB Bump Eraser Body</p>
               </a>
@@ -1601,141 +1638,163 @@
         </div>
       </div>
     </div>
-    <div class="footer_container">
-        <div class="container1">
-            <div class="item">
-                <img src="./icons/store-location.svg" />
-                <div>
-            <a href="#"><h4>Find a Store </h4></a>
-               <p>Choose Your Store</p>
-                </div>
-            </div>
-            <div class="item">
-                <i class="fi-rs-comment"></i>
-                <div>
-            <a href="#"><h4>Customer Service Chat</h4></a>
-               <p>Available</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./icons/telephone.svg" alt="">
-                <div>
-               <h4>1-877-737-4672</h4>
-               <p>TTY: 1-888-866-9845</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="https://www.sephora.com/img/ufe/icons/app.svg" alt="">
-                <div>
-               <h4>Get the App</h4>
-               <p>Text “APP” to 63485</p>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/sephora/icons/credit-card.svg" alt="">
-                <div> 
-                <a href="#"><h4>Sephora Credit Card Program</h4></a>
-               <p>Want 15% off your Sephora purchase1? DETAILS</p>
-                </div>
-            </div>
-        </div>
-        <div class="hr"></div>
 
-        <div class="container2">
-            <div class="item">
-                <h4>About Sephora</h4>
-                <p>About Sephora</p>
-                <p>Newsroom</p>
-                <p>Careers</p>
-                <p>Sephora Social Impact</p>
-                <p>Supply Chain Transparency</p>
-                <p>Affiliates</p>
-                <p>Sephora Events</p>
-                <p>Gift Cards</p>
-                <p>Sephora Global Sites</p>
-                <p>Diversity and Inclusion</p>
-                <p>Checkout on Instagram</p>
-                <p>Sephora Accelerate</p>
-            </div>
-            <div class="item">
-                <h4>My Sephora</h4>
-                <p>Beauty Insider</p>
-                <p>Sephora Credit Card</p>
-                <p>Community Profile</p>
-                <p>Order Status</p>
-                <p>Purchase History</p>
-                <p>Account Settings</p>
-                <p>Beauty Advisor Recommendations</p>
-                <p>Beauty Offers</p>
-                <p>Quizzes & Buying Guides</p>
-                <p>Rewards Bazaar</p>
-                <p>Loves</p>
-                <p>Book a Reservation</p>
-            </div>
-            <div class="item">
-                <h4>Help</h4>
-                <p>Customer Service</p>
-                <p>Returns & Exchanges</p>
-                <p>Buy Online, Pick Up In Store</p>
-                <p>Shipping</p>
-                <p>Billing</p>
-                <p>International Shipments</p>
-                <p>Beauty Services FAQ</p>
-                <p>Sephora Inside JCPenney</p>
-                <p>Store Locations</p>
-                <p>Online Ordering</p>
-                <p>Klarna</p>
-                <p>Accessibility</p>
-                <p>Steps We're Taking to Address <br> COVID-19</p>
-            </div>
-            <div class="item item4">
-                <h4>Region & Language</h4>
-                <div>
-                <img src="./icons/checked.svg" alt="" width="10px">
-                <img src="./icons/united-states.svg" alt="USA" width="20px"> <p>United States - English</p>
-                </div>
-                <div>
-                <img src="./icons/canada.svg" alt="USA" width="20px">  <p>Canada-English</p>
-                </div>
-                <div>
-                <img src="./icons/canada.svg" alt="USA" width="20px">  <p>Canada-Francais</p>
-                </div>
-                
-            </div>
-            <div class="item item5">
-                    <h1>We Belong to <br>
-                    Something Beautiful</h1>
-                
-                    <div>
-                        <p>Sign up for Sephora Emails</p>
-                        <input type="text" placeholder="Enter your email address">
-                        <button>Sign Up</button>
-                    </div>
-            </div>
+    <!-- homepage body ends -->
+
+
+
+
+    <!-- footer section starts -->
+    <div class="footer_container">
+
+      <div class="container1">
+        <div class="item">
+          <img src="./icons/store-location.svg" />
+          <div>
+            <a href="#">
+              <h4>Find a Store </h4>
+            </a>
+            <p>Choose Your Store</p>
+          </div>
         </div>
-        <div class="hr"></div>
-        <div class="container3">
-            <div class="left-content">
-                <p>© 2021 Sephora USA, Inc. All rights reserved.</p>
-                <div>
-                    <div class="items">Privacy Policy</div>
-                    <div class="items">Terms of Use</div>
-                    <div class="items">Accessibility</div>
-                    <div class="items">Sitemap</div>
-                </div>
-            </div>
-            <div class="right-icons">
-                <div class="icon_item"> <a href="#"><i class="fab fa-instagram"></a></i></div>
-                <div class="icon_item"><a href="#"><i class="fab fa-facebook-square"></a></i></div>
-                <div class="icon_item"><a href="#"><i class="fab fa-twitter"></a></i></div>
-                <div class="icon_item"><a href="#"><i class="fab fa-youtube"></a></i></div>
-                <div class="icon_item"><a href="#"><i class="fab fa-pinterest"></a></i></div>
-                <div class="icon_item"><a href="#"><i class="fab fa-snapchat-ghost"></a></i></div>
-                <div class="icon_item"><a href="#"><i class="fab fa-tiktok"></i></a></i></div>
-            </div>
+        <div class="item">
+          <i class="fi-rs-comment"></i>
+          <div>
+            <a href="#">
+              <h4>Customer Service Chat</h4>
+            </a>
+            <p>Available</p>
+          </div>
         </div>
+        <div class="item">
+          <img src="./icons/telephone.svg" alt="">
+          <div>
+            <h4>1-877-737-4672</h4>
+            <p>TTY: 1-888-866-9845</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://www.sephora.com/img/ufe/icons/app.svg" alt="">
+          <div>
+            <h4>Get the App</h4>
+            <p>Text “APP” to 63485</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/sephora/icons/credit-card.svg" alt="">
+          <div>
+            <a href="#">
+              <h4>Sephora Credit Card Program</h4>
+            </a>
+            <p>Want 15% off your Sephora purchase1? DETAILS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hr_footer"></div>
+    
+      <div class="container2">
+        <div class="item">
+          <h4>About Sephora</h4>
+          <p>About Sephora</p>
+          <p>Newsroom</p>
+          <p>Careers</p>
+          <p>Sephora Social Impact</p>
+          <p>Supply Chain Transparency</p>
+          <p>Affiliates</p>
+          <p>Sephora Events</p>
+          <p>Gift Cards</p>
+          <p>Sephora Global Sites</p>
+          <p>Diversity and Inclusion</p>
+          <p>Checkout on Instagram</p>
+          <p>Sephora Accelerate</p>
+        </div>
+        <div class="item">
+          <h4>My Sephora</h4>
+          <p>Beauty Insider</p>
+          <p>Sephora Credit Card</p>
+          <p>Community Profile</p>
+          <p>Order Status</p>
+          <p>Purchase History</p>
+          <p>Account Settings</p>
+          <p>Beauty Advisor Recommendations</p>
+          <p>Beauty Offers</p>
+          <p>Quizzes & Buying Guides</p>
+          <p>Rewards Bazaar</p>
+          <p>Loves</p>
+          <p>Book a Reservation</p>
+        </div>
+        <div class="item">
+          <h4>Help</h4>
+          <p>Customer Service</p>
+          <p>Returns & Exchanges</p>
+          <p>Buy Online, Pick Up In Store</p>
+          <p>Shipping</p>
+          <p>Billing</p>
+          <p>International Shipments</p>
+          <p>Beauty Services FAQ</p>
+          <p>Sephora Inside JCPenney</p>
+          <p>Store Locations</p>
+          <p>Online Ordering</p>
+          <p>Klarna</p>
+          <p>Accessibility</p>
+          <p>Steps We're Taking to Address <br> COVID-19</p>
+        </div>
+        <div class="item item4">
+          <h4>Region & Language</h4>
+          <div>
+            <img src="./icons/checked.svg" alt="" width="10px">
+            <img src="./icons/united-states.svg" alt="USA" width="20px">
+            <p>United States - English</p>
+          </div>
+          <div>
+            <img src="./icons/canada.svg" alt="USA" width="20px">
+            <p>Canada-English</p>
+          </div>
+          <div>
+            <img src="./icons/canada.svg" alt="USA" width="20px">
+            <p>Canada-Francais</p>
+          </div>
+    
+        </div>
+        <div class="item item5">
+          <h1>We Belong to <br>
+            Something Beautiful</h1>
+    
+          <div id="signupBtn">
+            <p>Sign up for Sephora Emails</p>
+            <input type="text" placeholder="Enter your email address">
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hr_footer"></div>
+
+      <div class="container3">
+        <div class="left-content">
+          <p>© 2021 Sephora USA, Inc. All rights reserved.</p>
+          <div>
+            <div class="items">Privacy Policy</div>
+            <div class="items">Terms of Use</div>
+            <div class="items">Accessibility</div>
+            <div class="items">Sitemap</div>
+          </div>
+        </div>
+        <div class="right-icons">
+          <div class="icon_item"> <a href="#"><i class="fab fa-instagram"></a></i></div>
+          <div class="icon_item"><a href="#"><i class="fab fa-facebook-square"></a></i></div>
+          <div class="icon_item"><a href="#"><i class="fab fa-twitter"></a></i></div>
+          <div class="icon_item"><a href="#"><i class="fab fa-youtube"></a></i></div>
+          <div class="icon_item"><a href="#"><i class="fab fa-pinterest"></a></i></div>
+          <div class="icon_item"><a href="#"><i class="fab fa-snapchat-ghost"></a></i></div>
+          <div class="icon_item"><a href="#"><i class="fab fa-tiktok"></i></a></i></div>
+        </div>
+      </div>
+
     </div>
+    <!-- footer section ends -->
   </body>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </html>

@@ -5,7 +5,7 @@
   padding: 0;
   font-family: "roboto";
 }
-.hr {
+.hr_footer {
   height: 1px;
   margin-left: 80px;
   margin-right: 120px;
@@ -19,9 +19,9 @@
   display: flex;
   flex-direction: column;
 }
-a{
-    color: white;
-    text-decoration: none;
+.footer_container a {
+  color: white;
+  text-decoration: none;
 }
 
 /* start footer top  container */
@@ -46,10 +46,9 @@ a{
   font-size: 22px;
 }
 
-.container1 .item > div a{
-    color: white;
-    text-decoration: none;
-    
+.container1 .item > div a {
+  color: white;
+  text-decoration: none;
 }
 .container1 .item > div > p {
   font-weight: 500;
@@ -62,7 +61,6 @@ a{
 /* end footer top container */
 
 /* start footer middle container */
-
 
 .container2 {
   height: 70%;
@@ -132,10 +130,10 @@ a{
   font-weight: bold;
   transition: ease-out 0.2s;
 }
-.container2 .item5 div button:hover{
-    opacity: 50%;
-    cursor: pointer;
-    transition:ease-in 0.2s;
+.container2 .item5 div button:hover {
+  opacity: 50%;
+  cursor: pointer;
+  transition: ease-in 0.2s;
 }
 /* end footer middle container */
 
