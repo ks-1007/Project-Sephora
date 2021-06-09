@@ -201,7 +201,10 @@ function prevBtn5(list) {
     
 }
 
-function signinToggle() {
-    var blur = document.getElementById('body');
-    blur.setAttribute('class','signinBtnActive');
-}
+// function signinToggle() {  
+//      var popup_signin = document.getElementById('popup_signin');
+//     popup_signin.setAttribute('class','signinBtnActivee');
+
+    //  var blur = document.getElementById('body');
+    // blur.setAttribute('class', 'signinBtnActive');
+// }

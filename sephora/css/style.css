@@ -73,11 +73,117 @@ nav > div:nth-child(1) > div:nth-child(5) {
   align-items: center;
   font-weight: 500;
   font-style: italic;
+  position: relative;
 }
-nav > div:nth-child(1) > div:nth-child(5) >div> img {
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 600px;
+  position: absolute;
+  right: -120px;
+  top: 120%;
+  background: #ffffff;
+  padding: 10px 0;
+  border-radius: 10px;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu::-webkit-scrollbar {
+  width: 6px;
+}
+nav
+  > div:nth-child(1)
+  > div:nth-child(5)
+  > div
+  .sub_menu::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 20px;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div:hover .sub_menu {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .menu-items {
+  display: block;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .menu-items a {
+  display: inline-flex;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .menu-items a img {
+  margin-right: 10px;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .beautyInsider a img {
+  
+  margin-left: 70px;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .signinBtnLogo a,
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .signinBtn a{
+ 
+  border-top: none;
+  text-decoration: none;
+}nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .signinBtn{
+  display: flex;
+text-align: center;}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .signinBtn button:nth-child(1){
+  background: black;
+  color: white;
+  font-weight: 500;
+  border: none;
+  width: 140px;
+  padding: 10px 0px;
+  border-radius: 25px;
+  margin: 0px 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .signinBtn button:nth-child(1):hover,
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .signinBtn button:nth-child(2):hover{
+  opacity: 0.5;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .signinBtn button:nth-child(2){
+  background: none;
+  color: black;
+  font-weight: 500;
+  border: 1px solid black;
+  width: 145px;
+  padding: 8px 0px;
+  border-radius: 25px;
+  margin: 0px 8px;
+  cursor: pointer;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .menu-items a p {
+  color: gray;
+  font-size: 13px;
+  padding: 2px 0px;
+}
+nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .menu-items a:hover {
+  text-decoration: underline;
+}
+nav > div:nth-child(1) > div:nth-child(5) .pop{
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  margin: 10px;
+}
+
+nav > div:nth-child(1) > div:nth-child(5) > div > img {
   width: 35px;
 }
-nav > div:nth-child(1) > div:nth-child(5) >div> img:hover{
+nav > div:nth-child(1) > div:nth-child(5) > div > img:hover {
   border: 2px solid black;
   border-radius: 50%;
 }
@@ -87,9 +193,31 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
   text-decoration-thickness: 3px;
   text-underline-offset: 2px;
 }
-.signinBtnActive{
+/* .signinBtnActive {
   opacity: 60%;
+} */
+/* #popup_signin {
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  transform: translate(-50%-50%);
+  width: 400px;
+  height: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0);
+  background: white;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
 }
+.signinBtnActivee {
+  visibility: visible;
+  opacity: 1;
+  border: 2px solid red;
+  z-index: 1;
+} */
+
 nav > div:nth-child(1) > div:nth-child(6) {
   /* heart shape */
   width: 2%;
