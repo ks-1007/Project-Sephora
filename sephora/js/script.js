@@ -200,3 +200,8 @@ function prevBtn5(list) {
     
     
 }
+
+function signinToggle() {
+    var blur = document.getElementById('body');
+    blur.setAttribute('class','signinBtnActive');
+}
