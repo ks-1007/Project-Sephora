@@ -71,7 +71,10 @@ let products = {
 }
 
 localStorage.setItem('productList', JSON.stringify(products));
-
+let totalprice = 0;
+let itemcount = 0;
+let itemcountContainer = document.getElementById("itemNo");
+let totalpriceCont = document.getElementById("merchandiseTotal")
 function addToCart(item) {
     let products = JSON.parse(localStorage.getItem('productList'));
     let elem = products[item];
@@ -106,6 +109,8 @@ if (cartitems != null) {
         brand.innerHTML = cartitems[key].brand;
         desc.innerHTML = cartitems[key].desc;
         price.innerHTML = `$${cartitems[key].price}`
+        totalprice += cartitems[key].price * cartitems[key].quantity;
+        itemcount += cartitems[key].quantity;
         quantity.innerHTML = cartitems[key].quantity;
         let imagediv = document.createElement("div");
         let infodiv = document.createElement("div")
@@ -119,10 +124,14 @@ if (cartitems != null) {
         pricediv.append(price, removebutton);
         parentdiv.append(imagediv, infodiv, quantitydiv, pricediv);
         cart.append(parentdiv);
+        totalpriceCont.innerHTML = `$${totalprice}`;
+        itemcountContainer.innerHTML = `Items in basket (${itemcount})`
     }
 }
 
 function removeFromCart(item) {
+    // totalprice -= cartitems[item].price;
+    // totalpriceCont.innerHTML = `$${totalprice}`;
     delete cartitems[item];
     localStorage.setItem("cartList", JSON.stringify(cartitems));
     document.location.reload()
