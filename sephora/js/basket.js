@@ -71,7 +71,10 @@ let products = {
 }
 
 localStorage.setItem('productList', JSON.stringify(products));
-
+let totalprice = 0;
+let itemcount = 0;
+let itemcountContainer = document.getElementById("itemNo");
+let totalpriceCont = document.getElementById("merchandiseTotal")
 function addToCart(item) {
     let products = JSON.parse(localStorage.getItem('productList'));
     let elem = products[item];
@@ -93,6 +96,7 @@ function addToCart(item) {
 
 let cart = document.getElementById("cart");
 let cartitems = JSON.parse(localStorage.getItem("cartList"));
+
 if (cartitems != null) {
     for (key in cartitems) {
         let parentdiv = document.createElement("div")
@@ -105,18 +109,30 @@ if (cartitems != null) {
         brand.innerHTML = cartitems[key].brand;
         desc.innerHTML = cartitems[key].desc;
         price.innerHTML = `$${cartitems[key].price}`
+        totalprice += cartitems[key].price * cartitems[key].quantity;
+        itemcount += cartitems[key].quantity;
         quantity.innerHTML = cartitems[key].quantity;
         let imagediv = document.createElement("div");
         let infodiv = document.createElement("div")
         let quantitydiv = document.createElement("div")
         let pricediv = document.createElement("div");
         let removebutton = document.createElement("button");
-        removebutton.innerHTML = `<button onclick="remove(${key})">REMOVE</button>`
+        removebutton.innerHTML = `<button onclick="removeFromCart('${key}')">REMOVE</button>`
         imagediv.append(image);
         infodiv.append(brand, desc)
         quantitydiv.append(quantity)
         pricediv.append(price, removebutton);
         parentdiv.append(imagediv, infodiv, quantitydiv, pricediv);
         cart.append(parentdiv);
+        totalpriceCont.innerHTML = `$${totalprice}`;
+        itemcountContainer.innerHTML = `Items in basket (${itemcount})`
     }
+}
+
+function removeFromCart(item) {
+    // totalprice -= cartitems[item].price;
+    // totalpriceCont.innerHTML = `$${totalprice}`;
+    delete cartitems[item];
+    localStorage.setItem("cartList", JSON.stringify(cartitems));
+    document.location.reload()
 }

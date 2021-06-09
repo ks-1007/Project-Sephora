@@ -63,8 +63,9 @@
           <div>
             <!-- logo -->
             <img
-              src="https://www.sephora.com/img/ufe/icons/me-active.svg"
-              alt=""
+              src="https://www.sephora.com/img/ufe/icons/me32.svg" 
+              alt="signin logo" onmouseover="this.src = 'https://www.sephora.com/img/ufe/icons/me-active.svg '  "
+              onmouseout="this.src = 'https://www.sephora.com/img/ufe/icons/me32.svg' "
             />
           </div>
           <div>
@@ -81,7 +82,7 @@
         </div>
         <div>
           <!-- basket -->
-          <a href=""
+          <a href="basket.html"
             ><img
               src="https://image.flaticon.com/icons/png/128/2636/2636890.png"
               alt=""
@@ -121,7 +122,7 @@
         </div>
         <!-- cart box -->
         <div id="cartCont">
-          <h3>Items in basket (0)</h3>
+          <h3 id="itemNo">Items in basket (0)</h3>
           <div id="cart"></div>
         </div>
         <div class="productCont">
@@ -367,8 +368,24 @@
       </div>
       <div id="right">
         <div id="payment">
-          <p>Merchandise Subtotal</p>
-          <p>Tax</p>
+          <div>
+            <div>
+              <p>Merchandise Subtotal</p>
+            </div>
+            <div id="merchandiseTotal">
+              
+            </div>
+            
+          </div>
+          <div>
+            <div>
+              <p>Tax</p>
+            </div>
+            <div>
+              <p>TBD</p>
+            </div>
+          </div>
+          
           <hr />
           <h3>Estimated Total</h3>
           <p>Shipping & taxes calculated during checkout</p>
