@@ -115,7 +115,9 @@ if (cartitems != null) {
         randomInfo.innerHTML = `
         <p>SIZE 0.28 oz/ 8 g • ITEM 2465821</p>
         <p>Color: 03 Tan Light</p>
-        `
+        `;
+        randomInfo.style.fontSize = "14px";
+        randomInfo.style.color = "gray"
         totalprice += cartitems[key].price * cartitems[key].quantity;
         itemcount += cartitems[key].quantity;
         quantity.innerHTML = cartitems[key].quantity;
