@@ -100,6 +100,7 @@ let cart = document.getElementById("cart");
 let cartitems = JSON.parse(localStorage.getItem("cartList"));
 let estimated = document.getElementById("estimatedTotal")
 if (cartitems != null) {
+    cart.innerHTML = null;
     for (key in cartitems) {
         let parentdiv = document.createElement("div")
         let image = document.createElement("img");
@@ -137,6 +138,14 @@ if (cartitems != null) {
         estimated.innerHTML = `<h4>$${totalprice}</h4>`;
         itemcountContainer.innerHTML = `Items in basket (${itemcount})`
     }
+}
+if (cartitems == null || Object.keys(cartitems).length === 0) {
+    cart.innerHTML =
+        
+        `
+            <h4>Your basket is currently empty.</h4>
+            <button id="emptyCartBtn">Shop New Arrivals</button>
+        `
 }
 if (totalprice < 50) {
     remainingForFreeShippingCont.innerHTML = `You're only $${50-totalprice}.00 away from Free Shipping.`
