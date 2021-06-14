@@ -217,17 +217,17 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
   text-decoration-thickness: 3px;
   text-underline-offset: 2px;
 }
-/* .signinBtnActive {
+.signinBtnActive {
   opacity: 60%;
-} */
-/* #popup_signin {
+}
+.popup_signin {
   position: fixed;
   top: 10%;
   left: 35%;
   transform: translate(-50%-50%);
   width: 400px;
   height: 600px;
-  padding: 50px;
+  padding: 20px;
   box-shadow: 0 5px 30px rgba(0, 0, 0);
   background: white;
   border-radius: 10px;
@@ -238,9 +238,8 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
 .signinBtnActivee {
   visibility: visible;
   opacity: 1;
-  border: 2px solid red;
   z-index: 1;
-} */
+}
 
 nav > div:nth-child(1) > div:nth-child(6) {
   /* heart shape */
