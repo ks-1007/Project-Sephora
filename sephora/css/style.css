@@ -143,8 +143,7 @@ nav
   > div
   .sub_menu
   .signinBtn
-  button:nth-child(1),
-.signinButton {
+  button:nth-child(1) {
   background: black;
   color: white;
   font-weight: 500;
@@ -169,9 +168,7 @@ nav
   > div
   .sub_menu
   .signinBtn
-  button:nth-child(2):hover,
-.signinButton:hover,
-.createAccountButton:hover {
+  button:nth-child(2):hover {
   opacity: 0.5;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -182,8 +179,7 @@ nav
   > div
   .sub_menu
   .signinBtn
-  button:nth-child(2),
-.createAccountButton {
+  button:nth-child(2) {
   background: none;
   color: black;
   font-weight: 500;
@@ -201,12 +197,6 @@ nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .menu-items a p {
 }
 nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu .menu-items a:hover {
   text-decoration: underline;
-}
-nav > div:nth-child(1) > div:nth-child(5) .pop {
-  display: flex;
-  flex-direction: column;
-  background-color: aqua;
-  margin: 10px;
 }
 
 nav > div:nth-child(1) > div:nth-child(5) > div > img {
@@ -246,7 +236,7 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
 .signinBtnActivee {
   visibility: visible;
   opacity: 1;
-  z-index: 1;
+  /* z-index: 1; */
   transition: all 0.3s ease;
   transform: translateY(0);
 }
@@ -383,11 +373,4 @@ h2 {
   font-weight: 200;
   margin-bottom: 10px;
   font-family: "Bodoni Moda", serif;
-}
-
-@media (max-width: 800px) {
-  #prevBtn,
-  #nextBtn {
-    display: none;
-  }
 }

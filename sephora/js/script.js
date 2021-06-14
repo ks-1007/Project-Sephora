@@ -203,14 +203,16 @@ function prevBtn5(list) {
 
 function signinToggle() {  
      var popup_signin = document.getElementById('popup_signin');
-    //  console.log('popup_signin: ', popup_signin);
-    //  popup_signin.setAttribute('class', 'signinBtnActivee');
     popup_signin.classList.add('signinBtnActivee');
-
-    // popup_signin.classList.signinToggle('signinBtnActivee')
-    
-
-
     //  var blur = document.getElementById('body');
     // blur.setAttribute('class', 'signinBtnActive');
+}
+
+function signin(e) {
+    e.preventDefault();
+    let form = document.getElementById('signin_form')
+    let mail = form.email.value;
+    let password = form.password.value;
+
+    
 }
