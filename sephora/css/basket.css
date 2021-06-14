@@ -253,3 +253,10 @@
   border-radius: 22.5px;
   margin: 2%;
 }
+
+@media (max-width: 800px) {
+  #basketCont {
+    display: flex;
+    flex-direction: column;
+  }
+}

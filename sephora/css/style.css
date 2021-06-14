@@ -144,7 +144,7 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(1),
-  .signinButton {
+.signinButton {
   background: black;
   color: white;
   font-weight: 500;
@@ -170,8 +170,8 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(2):hover,
-  .signinButton:hover,
-  .createAccountButton:hover {
+.signinButton:hover,
+.createAccountButton:hover {
   opacity: 0.5;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -183,7 +183,7 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(2),
-  .createAccountButton{
+.createAccountButton {
   background: none;
   color: black;
   font-weight: 500;
@@ -383,4 +383,11 @@ h2 {
   font-weight: 200;
   margin-bottom: 10px;
   font-family: "Bodoni Moda", serif;
+}
+
+@media (max-width: 800px) {
+  #prevBtn,
+  #nextBtn {
+    display: none;
+  }
 }
