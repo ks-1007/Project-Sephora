@@ -45,7 +45,6 @@
   border: 2px solid rgb(219, 219, 219);
   padding: 3%;
   margin: 1%;
-  height: 300px;
 }
 #payment > div {
   width: 100%;
@@ -230,6 +229,7 @@
   border: 2px solid rgb(218, 218, 218);
   padding: 5%;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #assistance > div {
