@@ -14,7 +14,7 @@
 }
 .footer_container {
   background-color: black;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -178,3 +178,26 @@
   font-size: 22px;
 }
 /* end footer bottom container */
+
+@media screen and (max-width: 1199px) {
+  .container1 {
+    flex-direction: column;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+  .container3 {
+    flex-direction: column;
+  }
+  .container2 .item5 div {
+    margin-top: 5%;
+  }
+  .right-icons {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 100px;
+}
+.right-icons .icon_item{
+  margin: 8px;
+}
+}
