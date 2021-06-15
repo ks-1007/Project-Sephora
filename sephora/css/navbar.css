@@ -185,3 +185,36 @@ button {
     width: 50%;
   }
 }
+
+#responsiveNav {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  font-size: 12px;
+  /* text-align: center; */
+  height: 70px;
+  color: gray;
+  border-top: 0.5px solid rgb(221, 221, 221);
+}
+#responsiveNav > div {
+  width: 8.3%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#responsiveNav img {
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 800px) {
+  #responsiveNav {
+    visibility: visible;
+    position: fixed;
+    bottom: 0;
+  }
+}
