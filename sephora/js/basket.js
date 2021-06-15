@@ -1,42 +1,23 @@
-var slideIndex1 = 0;
+let l1=0
 function nextBtn1(list) {
-    
-    if (slideIndex1 < 8) {
-        var slideItems = document.getElementsByClassName(list);
-        
-        for (let i = slideIndex1; i < slideIndex1 + 4; i++){
-            slideItems[i].classList.remove("display");
-        }
-        slideIndex1 += 4;
-        
-        for (let i = slideIndex1; i < slideIndex1 + 4; i++){
-            slideItems[i].classList.add("display");
-        }
-    } else {
-        return;
+    l1++
+    let itemList = document.getElementsByClassName(list)
+    for (var i of itemList) {
+        if(l1===0){i.style.left="0px";}
+        if(l1===1){i.style.left="-700px";}
+        if(l1===2){i.style.left="-1400px";}
+        if (l1 > 2) { l1 = 2;}
     }
-    
-    
 }
 function prevBtn1(list) {
-    
-    if (slideIndex1 >3) {
-        var slideItems = document.getElementsByClassName(list);
-        
-        for (let i = slideIndex1+3; i >= slideIndex1 ; i--){
-            slideItems[i].classList.remove("display");
-        }
-        slideIndex1 -= 4;
-    
-        
-        for (let i = slideIndex1+3; i >= slideIndex1; i--){
-            slideItems[i].classList.add("display");
-        }
-    } else {
-        return;
+    l1--
+    let itemList = document.getElementsByClassName(list)
+    for (var i of itemList) {
+        if(l1===0){i.style.left="0px";}
+        if(l1===1){i.style.left="-700px";}
+        if(l1===2){i.style.left="-1400px";}
+        if (l1 < 0) { l1 = 0;}
     }
-    
-    
 }
 
 let products = {
