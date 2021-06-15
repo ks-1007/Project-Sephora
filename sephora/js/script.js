@@ -116,18 +116,23 @@ function signinToggle() {
     // blur.setAttribute('class', 'signinBtnActive');
 }
 
-function signupToggle() {  
-     var popup_signin = document.getElementById('popup_signup');
-    popup_signin.classList.add('signupBtnActive');
+function signupToggle(e) {
+    e.preventDefault();
+     var popup_signup = document.getElementById('popup_signup');
+    popup_signup.classList.add('signupBtnActive');
 }
 
-function signup(e) {
+function signup() {
     let form = document.getElementById('signup_form')
     let firstName = form.fname.value;
     let lastName = form.lname.value;
     let email = form.email.value;
     let password = form.password.value;
     let phone = form.phone.value;
+    let dobMonth = form.DOB_month.value;
+    let dobDay = form.DOB_day.value;
+    let dob = `${dobDay} ${dobMonth}`;
+    let pin = form.zippin.value;
 
     if (firstName == '' || lastName == '' ||  email == '' || password == '') {
         
@@ -139,7 +144,9 @@ function signup(e) {
             lastName,
             email,
             password,
-            phone
+            phone,
+            dob,
+            pin
         }
 
         let arr = localStorage.getItem('users')
@@ -158,6 +165,9 @@ function signup(e) {
     form.email.value = ''
     form.password.value = ''
     form.phone.value = ''
+    form.DOB_month.value = ''
+    form.DOB_day.value = ''
+    form.zippin.value = ''
 }
 
 function signin(e) {
