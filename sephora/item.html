@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -9,113 +12,10 @@
     <!-- flaticon- ui_icons cdn-->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Product Details</title>
     <style>
-        nav > div:nth-child(1) > div:nth-child(1) {
-  /*sephora logo link */
-  width: 12%;
-  /* margin: 2%; */
-}
-nav {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0px;
-}
-nav > div:nth-child(1) {
-  /* search box row */
-  display: flex;
-  flex-direction: row;
-  height: 80px;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-}
-nav > div > div {
-  cursor: pointer;
-}
-nav > div:nth-child(1) > div:nth-child(2) {
-  /* search box div*/
-  width: 36%;
-  /* margin: 0.5%; */
-}
-nav > div:nth-child(1) > div:nth-child(2) > input {
-  /* search box*/
-  /* border to be romoved later */
-  width: 100%;
-  height: 30px;
-  border-radius: 14px;
-  background-color: rgb(246, 246, 248);
-  border: none;
-}
 
-nav > div:nth-child(1) > div:nth-child(3) {
-  /*stores and services */
-  width: 11%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* margin: 2%; */
-}
-nav > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > p:nth-child(2) {
-  font-size: 12px;
-}
-nav > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > p {
-  margin: 0px;
-}
-nav > div:nth-child(1) > div:nth-child(4) {
-  /* targetting community  */
-  display: flex;
-  flex-direction: row;
-  width: 8%;
-  justify-content: space-between;
-}
-nav > div:nth-child(1) p {
-  margin: 0px;
-}
-nav > div:nth-child(1) > div:nth-child(5) {
-  /* sign in */
-  display: flex;
-  flex-direction: row;
-  width: 6%;
-  justify-content: space-between;
-  /* margin: 3%; */
-}
-nav > div:nth-child(1) > div:nth-child(6) {
-  /* heart shape */
-  width: 2%;
-}
-nav > div:nth-child(1) > div:nth-child(6) img {
-  /* heart shape */
-  width: 100%;
-}
-nav > div:nth-child(1) > div:nth-child(7) {
-  /* basket */
-  width: 2%;
-  /* margin: 2%; */
-}
-nav > div:nth-child(1) > div:nth-child(7) img {
-  /* basket */
-  width: 100%;
-}
-
-nav > div:nth-child(2) {
-  /* categories */
-  background-color: black;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 40px;
-}
-nav > div:nth-child(2) a {
-  color: white;
-  text-decoration: none;
-}
         #item_container p{
              font-family:sans-serif;
              font-style: normal;
@@ -275,6 +175,152 @@ nav > div:nth-child(2) a {
     </style>
 </head>
 <body>
+    <!-- modal container -->
+
+    <section>
+      <div id="modalContNew" class="modalCont">
+      <div id="modalNew" class="modal">
+        <div>
+          <h4><a href="">New</a></h4>
+          <h4><a href="">Just Dropped</a></h4>
+          <h4><a href="">New Makeup</a></h4>
+          <h4><a href="">New Skincare</a></h4>
+          <h4><a href="">New Hair</a></h4>
+          <h4><a href="">New Fragrance</a></h4>
+          <h4><a href="">New Bath and Body</a></h4>
+          <h4><a href="">New Tools and Brushes</a></h4>
+        </div>
+        <div>
+          <h4><a href="">Rouge First Access</a></h4>
+          <h4><a href="">The Next Big Thing</a></h4>
+          <h4><a href="">Best Sellers</a></h4>
+          <h4><a href="">Allure Best of Beauty</a></h4>
+          <h4><a href="">Quizzes and Buying Guides</a></h4>
+          <h4><a href="">Clean Body Guides</a></h4>
+        </div>
+        <div>
+          <img
+            src="https://www.sephora.com/contentimages/meganav/large/2021-april-skincare-site-desktop-global-navigation-button.jpg?imwidth=294"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.sephora.com/contentimages/meganav/large/03-05-2021-clean-color-site-desktop-global-navigation-button-590x590-can-final.jpg?imwidth=294"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div id="modalContBrand" class="modalCont">
+      <div id="modalBrand" class="modal">
+        <div>
+          <h4><a href="">Brands A-z</a></h4>
+          <h4><a href="">SEPHORA COLLECTION</a></h4>
+          <h4><a href="">New Brands</a></h4>
+          <p><a href="">Freck</a></p>
+          <p><a href="">Otherland US</a></p>
+          <p><a href="">Saie</a></p>
+          <p><a href="">Sunday ll Sumdau</a></p>
+        </div>
+        <div>
+          <h4><a href="">Only At Sephora</a></h4>
+          <p><a href="">PATRICK TA</a></p>
+          <p><a href="">Isle of Paradise</a></p>
+          <p><a href="">The 7 Virtues</a></p>
+          <p><a href="">adwoa beauty</a></p>
+          <p><a href="">PAT McGRATH LABS</a></p>
+        </div>
+        <div>
+          <h4><a href="">Affordable Brands</a></h4>
+          <p><a href="">SEPHORA COLLECTION</a></p>
+          <p><a href="">The Ordinary</a></p>
+          <p><a href="">The Inkey List</a></p>
+          <p><a href="">Verb</a></p>
+        </div>
+        <div>
+          <h4><a href="">Black-Owned Brands</a></h4>
+          <p><a href="">Adwoa Beauty</a></p>
+          <p><a href="">Bread Beauty Supply</a></p>
+          <p><a href="">Briogeo</a></p>
+          <p><a href="">FENTY BEAUTY by Rihanna</a></p>
+          <p><a href="">Golde</a></p>
+          <p><a href="">KNC Beauty</a></p>
+          <p><a href="">PAT MCGRATH LABS</a></p>
+          <p><a href="">Shani Darden Skin Care</a></p>
+        </div>
+        <div>
+          <img
+            src="https://www.sephora.com/contentimages/meganav/large/20210501-BlackOwnedBrands-site-desktop-global-navigation-button-en-us.jpg?imwidth=294"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div id="modalContMiniSize" class="modalCont">
+      <div id="modalMiniSize" class="modal">
+        <div>
+          <h4><a href="">Mini Size $15 and Under</a></h4>
+          <h4><a href="">Mini Size $25 and Under</a></h4>
+          <h4><a href="">Mini Size Value & Gift Sets</a></h4>
+          <h4><a href="">Makeup Minis</a></h4>
+          <h4><a href="">Skincare Minis</a></h4>
+          <h4><a href="">Healthcare Minis</a></h4>
+          <h4><a href="">Fragrance Minis</a></h4>
+          <h4><a href="">Bath & Body Minis</a></h4>
+          <h4><a href="">Sephora Favourites Minis</a></h4>
+        </div>
+        <div>
+          <img
+            src="https://www.sephora.com/contentimages/meganav/large/2020-07-29-site-global-navigation-button-evergreen-crossworld-minis.jpg?imwidth=294"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.sephora.com/contentimages/meganav/large/2020-12-23-site-dt-botnav-seph-coll-US.jpg?imwidth=294"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- modal container end -->
+
+    <!-- new responsive navbar -->
+    <section id="responsiveNav">
+      <div>
+        <a href="./sephora.html"><img src="https://www.sephora.com/img/ufe/icons/home.svg" alt="">
+        <p>Home</p></a>
+        
+      </div>
+      <div>
+        <a href="./productPage.html"><img src="https://www.sephora.com/img/ufe/icons/shop.svg" alt="">
+        <p>Shop</p></a>
+        
+      </div>
+      <div>
+        <a href="./productPage.html"><img src="https://www.sephora.com/img/ufe/icons/offers.svg" alt="">
+        <p>Offers</p></a>
+        
+      </div>
+      <div>
+        <img src="https://www.sephora.com/img/ufe/icons/me.svg" alt="">
+        <p>Me</p>
+      </div>
+      <div>
+        <a href="./productPage.html"><img src="https://www.sephora.com/img/ufe/icons/community.svg" alt="">
+        <p>Community</p></a>
+        
+      </div>
+      <div>
+        <a href="./basket.html"><img src="https://www.sephora.com/img/ufe/icons/stores.svg" alt="">
+        <p>Stores</p></a>
+        
+      </div>
+    </section>
+    <!-- new responsive navbar ends -->
+
     <!-- navbar -->
     <nav>
       <!-- search box row -->
@@ -288,9 +334,9 @@ nav > div:nth-child(2) a {
         <div>
           <!-- search box -->
 
-          <input type="text" placeholder="search" />
+          <input type="text" placeholder="&#128269; search" />
         </div>
-        <div>
+        <div id="stores">
           <!-- stores and services -->
           <div>
             <!-- store logo -->
@@ -304,7 +350,7 @@ nav > div:nth-child(2) a {
             <p>Choose Your Store</p>
           </div>
         </div>
-        <div>
+        <div id="community">
           <!-- community -->
           <div>
             <!-- community logo -->
@@ -317,7 +363,7 @@ nav > div:nth-child(2) a {
             <p>Community</p>
           </div>
         </div>
-        <div>
+        <div id="signin">
           <!-- Sign in -->
           <div>
             <!-- logo -->
@@ -328,10 +374,43 @@ nav > div:nth-child(2) a {
             />
           </div>
           <div>
-            <p>Sign In</p>
+            <p onclick="signinToggle()">Sign In</p>
+            <div>
+              <ul class="sub_menu">
+                <li class="menu-items signinBtnLogo"><a href="#"><img src="https://community.sephora.com/t5/image/serverpage/avatar-name/default-avatar/avatar-theme/sephora/avatar-collection/sephora/avatar-display-size/profile/version/4" alt="" width="50px"><span>Good Evening Beautiful.<p>Sign in for a more personalized experience.</p></span>
+                </a></li>
+                <li class="menu-items signinBtn"><a href="#"><button>Sign In</button><button>Create Account</button>
+                  </a></li>
+                <li class="menu-items beautyInsider"><a href="#"><span>Beauty insider summery<p>View activity, savings, benifits</p></span><img src="https://www.sephora.com/img/ufe/bi/logo-bi-stacked.svg" alt="" width="60px"></a></li>
+                <li class="menu-items"><a href="#"><span>Rewards Bazar <p>Redeem items,samples,more</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/subscription.svg" alt=""><span>Buy It Again <p>Reorder from in-store and online purches</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/track.svg" alt=""><span>Orders <p>View & track online or pickup orders</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/heart.svg" alt=""><span>Loves <p>View save products</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/account.svg" alt=""><span>Account Settings<p>payment, contact info, addresses, password</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/cc-outline.svg" alt=""><span>Sephora credit cardprogram <p>Apply now</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/flash.svg" alt=""><span>Flash <p>Inlimited 1-2 day shipping Subscription</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/reservations.svg" alt=""><span>Reservations<p>Manage yourservices, classes, events</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/traits.svg" alt=""><span>Beauty Traits & Color iQ <p>Complete your beauty traits for personalized recommendations</p></span></a></li>
+                <li class="menu-items"><a href="#"><img src="https://www.sephora.com/img/ufe/icons/recommendations.svg" alt=""><span>Beauty Advisor Recommendations <p>Recommendations from your store visits</p></span></a></li>
+                
+              </ul>
+            </div>
+            <div id="popup_signin" class="popup_signin">
+              <p>Signin To Sephora</p> 
+              <form id="signin_form">
+                <input type="email" placeholder="Emailaddress" id="email"><br>
+                <input type="password" placeholder="password" id="password"><br>
+                <input type="checkbox">Keep me signed in <a href="">forgot password?</a> <br>
+                <button class="signinButton" onclick="signin(event)">Sign In</button>
+                <br>
+                <p>New to Sephora?</p>
+                <button class="createAccountButton">Create Account</button> <br>
+                <a href="">Term of Use & Privacy policy</a>
+              </form>
+            </div>
           </div>
         </div>
-        <div>
+        <div id="favourite">
           <!-- heart shape -->
           <a href=""
             ><img
@@ -339,7 +418,7 @@ nav > div:nth-child(2) a {
               alt=""
           /></a>
         </div>
-        <div>
+        <div id="basket">
           <!-- basket -->
           <a href="basket.html"
             ><img
@@ -350,18 +429,42 @@ nav > div:nth-child(2) a {
       </div>
       <!-- category row -->
       <div>
-        <a href="productPage.html">New</a>
-        <a href="productPage.html">Brands</a>
-        <a href="productPage.html">Makeup</a>
-        <a href="productPage.html">Skincare</a>
-        <a href="productPage.html">Hair</a>
-        <a href="productPage.html">Fragrance</a>
-        <a href="productPage.html">Tools & Brushes</a>
-        <a href="productPage.html">Bath & Body</a>
-        <a href="productPage.html">Mini Size</a>
-        <a href="productPage.html">Gifts</a>
-        <a href="productPage.html">Beauty Under $20</a>
-        <a href="productPage.html">Sale & Offers</a>
+        <div>
+          <a href="productPage.html" class="categoryNew">New</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryBrands">Brands</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryMiniSize">Makeup</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryNew">Skincare</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryBrands">Hair</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryMiniSize">Fragrance</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryNew">Tools&Brushes</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryBrands">Bath&Body</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryMiniSize">MiniSize</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryNew">Gifts</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryBrands">BeautyUnder$20</a>
+        </div>
+        <div>
+          <a href="productPage.html" class="categoryMiniSize">Sale&Offers</a>
+        </div>
       </div>
     </nav>
     <div id="item_container">
@@ -902,5 +1005,6 @@ nav > div:nth-child(2) a {
     </div>
             
 </body>
+<script src="js/navbar.js"></script>
 </html>
  
