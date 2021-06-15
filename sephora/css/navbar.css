@@ -200,6 +200,8 @@ button {
   height: 70px;
   color: gray;
   border-top: 0.5px solid rgb(221, 221, 221);
+  position: fixed;
+  bottom: 0;
 }
 #responsiveNav > div {
   width: 8.3%;
@@ -214,7 +216,5 @@ button {
 @media (max-width: 800px) {
   #responsiveNav {
     visibility: visible;
-    position: fixed;
-    bottom: 0;
   }
 }
