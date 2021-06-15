@@ -144,7 +144,7 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(1),
-  .signinButton {
+.signinButton {
   background: black;
   color: white;
   font-weight: 500;
@@ -170,8 +170,8 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(2):hover,
-  .signinButton:hover,
-  .createAccountButton:hover {
+.signinButton:hover,
+.createAccountButton:hover {
   opacity: 0.5;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -183,7 +183,7 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(2),
-  .createAccountButton {
+.createAccountButton {
   background: none;
   color: black;
   font-weight: 500;
@@ -216,6 +216,7 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
   text-decoration-thickness: 3px;
   text-underline-offset: 2px;
 }
+/* signin popup form starts*/
 /* .signinBtnActive {
   opacity: 60%;
 } */
@@ -266,10 +267,12 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
   display: flex;
   margin: 10px 0px;
 }
-.popup_signin div input[type="checkbox"] {
+.popup_signin div input[type="checkbox"],
+.popup_signup div:nth-child(3) form > div:last-child input[type="checkbox"] {
   display: none;
 }
-.popup_signin div input[type="checkbox"] + label::before {
+.popup_signin div input[type="checkbox"] + label::before,
+.popup_signup div:nth-child(3) form > div:last-child input[type="checkbox"]+ label::before {
   border: 2px solid rgb(54, 54, 54);
   content: "\2714";
   padding: 0 4px;
@@ -278,55 +281,55 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
   color: transparent;
   text-align: center;
 }
-.popup_signin div input[type="checkbox"]:checked + label::before {
+.popup_signin div input[type="checkbox"]:checked + label::before,
+.popup_signup div:nth-child(3) form > div:last-child input[type="checkbox"]:checked + label::before {
   background: black;
   color: white;
 }
-.popup_signin div label{
+.popup_signin div label,
+.popup_signup div:nth-child(3) form > div:last-child label {
   font-style: italic;
 }
-.popup_signin div a{
+.popup_signin div a {
   margin-left: 150px;
   color: blue;
   font-style: italic;
 }
-.popup_signin  div a:hover{
+.popup_signin div a:hover {
   text-decoration: underline;
 }
-.popup_signin .signinButton{
+.popup_signin .signinButton {
   margin: 20px 0;
   width: 200px;
   height: 45px;
   font-weight: bold;
 }
-.popup_signin form p{
+.popup_signin form p {
   padding-top: 20px;
   font-weight: 600;
 }
-.popup_signin .createAccountButton{
+.popup_signin .createAccountButton {
   margin: 20px 0;
   width: 200px;
   height: 45px;
   font-weight: bold;
 }
-.popup_signin .createAccountButton a{
+.popup_signin .createAccountButton a {
   color: black;
 }
-.popup_signin form > a{
-  color:  blue;
+.popup_signin form > a {
+  color: blue;
   position: absolute;
   left: 30%;
   font-size: 13px;
 }
-.popup_signin .closeIcon{
+.popup_signin .closeIcon {
   position: absolute;
   right: 6%;
   top: 5%;
   font-size: 20px;
 }
 /* signin popup form ends*/
-
-
 
 /* signup popup form starts*/
 .popup_signup {
@@ -346,6 +349,7 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
   transition: all 0.3s ease;
   font-style: normal;
   transform: translateY(20px);
+  overflow-y: scroll;
 }
 .signupBtnActive {
   visibility: visible;
@@ -354,8 +358,88 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
   transition: all 0.3s ease;
   transform: translateY(0);
 }
+.popup_signup::-webkit-scrollbar{
+  width: 2px;
+}
+.popup_signup div:nth-child(1) {
+  text-align: center;
+  margin: 5px 0 5px 0;
+}
+.popup_signup div:nth-child(1) > p {
+  font-size: 18px;
+  font-weight: 500;
+  /* font-family: 'open sans'; */
+  margin-bottom: 10px;
+}
+.popup_signup .closeIcon {
+  position: absolute;
+  top: 4%;
+  right: 6%;
+  font-size: 20px;
+}
+.popup_signup div:nth-child(3) > img {
+  width: 200px;
+  margin: 15px 0;
+}
+.popup_signup div:nth-child(3) > p {
+  font-style: italic;
+}
+.popup_signup div:nth-child(3) form > div:nth-child(1),
+.popup_signup div:nth-child(3) form div:nth-child(6) {
+  display: flex;
+  box-sizing: border-box;
+}
+.popup_signup div:nth-child(3) form > div:nth-child(1) input,
+.popup_signup div:nth-child(3) form div:nth-child(6) select {
+  /* padding: 10px 32px; */
+  border-radius: 4px;
+  border: 1px solid black;
+  width: 50%;
+  height: 40px;
+  box-sizing: border-box;
+  margin-right: 4px;
+}
+.popup_signup div:nth-child(3) form > div:nth-child(1) input::placeholder,
+.popup_signup div:nth-child(3) form input::placeholder,
+.popup_signup div:nth-child(3) form div:nth-child(6) select:optional {
+  font-size: 16px;
+  padding-left: 6px;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.popup_signup div:nth-child(3) form input {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid black;
+  height: 40px;
+  margin: 5px 0;
+}
+.popup_signup div:nth-child(3) form > p:nth-child(5) {
+  margin: 15px 0;
+  font-weight: 600;
+}
+.popup_signup div:nth-child(3) form > div:last-child{
+  display: flex;
+  margin: 10px 0 30px 0;
+}
+.popup_signup div:nth-child(3) button{
+  width: 250px;
+  margin: 20px 0;
+}
+.popup_signup div:nth-child(5){
+  width: 100%;
+  font-size: 12px;
+  padding: 10px 0;
+}
+.popup_signup div:nth-child(5) > p  a{
+  color: royalblue;
+  font-style: italic;
+}
+.popup_signup div:nth-child(5) > p  a:hover{
+  text-decoration: underline;
+}
 /* signup popup form ends*/
-
 
 nav > div:nth-child(1) > div:nth-child(6) {
   /* heart shape */
