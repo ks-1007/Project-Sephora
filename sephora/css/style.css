@@ -274,7 +274,7 @@ nav > div:nth-child(2) a {
   text-decoration: none;
 }
 #container {
-  max-width: 1200px;
+  width: 90%;
   margin: auto;
   text-align: center;
   margin-bottom: 100px;
@@ -295,13 +295,16 @@ a {
   display: flex;
   flex-direction: row;
   /* flex-wrap: nowrap; */
-  width: 1000px;
+  width: 98%;
   /* background-color: burlywood; */
-  margin: auto;
+  margin: 10px auto;
   /* justify-content: space-around; */
-  overflow-x: hidden;
-  margin-bottom: 50px;
-  justify-content: space-around;
+  overflow-x: auto;
+  /* margin-bottom: 50px; */
+  justify-content: left;
+}
+.productList::-webkit-scrollbar {
+  visibility: hidden;
 }
 .productList > div {
   /* width: 150px; */
@@ -309,9 +312,13 @@ a {
   /* margin: 3.5%; */
   text-align: center;
   /* width: 300px; */
-  width: 12.5%;
-  display: none;
+  /* min-width: 100px; */
+  min-width: 16.6%;
+  /* display: none; */
+  position: relative;
+  left: 0;
   cursor: pointer;
+  transition: 0.5s;
 }
 .productList > div > div > p {
   font-size: 13px;
@@ -346,18 +353,21 @@ a {
 }
 .productCont {
   position: relative;
-  width: 1100px;
+  width: 90%;
   margin: auto;
+  overflow: hidden;
 }
 #nextBtn {
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 0px;
+  z-index: 1;
 }
 #prevBtn {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 0px;
+  z-index: 1;
 }
 #container button {
   background-color: white;
