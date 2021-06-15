@@ -103,7 +103,7 @@ function prevBtn5(list) {
     for (var i of itemList) {
         if(l5===0){i.style.left="0px";}
         if(l5===1){i.style.left="-1070px";}
-        if(5===2){i.style.left="-2140px";}
+        if(l5===2){i.style.left="-2140px";}
         if (l5 < 0) { l5 = 0;}
     }
 }
