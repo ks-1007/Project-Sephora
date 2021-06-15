@@ -143,7 +143,8 @@ nav
   > div
   .sub_menu
   .signinBtn
-  button:nth-child(1) {
+  button:nth-child(1),
+  .signinButton {
   background: black;
   color: white;
   font-weight: 500;
@@ -168,7 +169,9 @@ nav
   > div
   .sub_menu
   .signinBtn
-  button:nth-child(2):hover {
+  button:nth-child(2):hover,
+  .signinButton:hover,
+  .createAccountButton:hover {
   opacity: 0.5;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -179,7 +182,8 @@ nav
   > div
   .sub_menu
   .signinBtn
-  button:nth-child(2) {
+  button:nth-child(2),
+  .createAccountButton {
   background: none;
   color: black;
   font-weight: 500;
@@ -212,18 +216,18 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
   text-decoration-thickness: 3px;
   text-underline-offset: 2px;
 }
-.signinBtnActive {
+/* .signinBtnActive {
   opacity: 60%;
-}
+} */
 .popup_signin {
   position: fixed;
   top: 10%;
   left: 33%;
   transform: translate(-50%-50%);
-  width: 500px;
+  width: 480px;
   height: 450px;
-  padding: 20px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0);
+  padding: 25px;
+  box-shadow: 0 5px 10px rgb(141, 141, 141);
   background: white;
   border-radius: 10px;
   visibility: hidden;
@@ -233,13 +237,125 @@ nav > div:nth-child(1) > div:nth-child(5):hover {
   font-style: normal;
   transform: translateY(20px);
 }
-.signinBtnActivee {
+.signinBtnActive {
   visibility: visible;
   opacity: 1;
   /* z-index: 1; */
   transition: all 0.3s ease;
   transform: translateY(0);
 }
+.popup_signin > p {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 0 20px 0;
+}
+.popup_signin input {
+  width: 100%;
+  color: red;
+  padding: 12px 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid rgb(194, 193, 193);
+}
+.popup_signin input::placeholder {
+  font-style: italic;
+  font-weight: 500;
+  color: gray;
+}
+.popup_signin div {
+  display: flex;
+  margin: 10px 0px;
+}
+.popup_signin div input[type="checkbox"] {
+  display: none;
+}
+.popup_signin div input[type="checkbox"] + label::before {
+  border: 2px solid rgb(54, 54, 54);
+  content: "\2714";
+  padding: 0 4px;
+  border-radius: 4px;
+  margin-right: 6px;
+  color: transparent;
+  text-align: center;
+}
+.popup_signin div input[type="checkbox"]:checked + label::before {
+  background: black;
+  color: white;
+}
+.popup_signin div label{
+  font-style: italic;
+}
+.popup_signin div a{
+  margin-left: 150px;
+  color: blue;
+  font-style: italic;
+}
+.popup_signin  div a:hover{
+  text-decoration: underline;
+}
+.popup_signin .signinButton{
+  margin: 20px 0;
+  width: 200px;
+  height: 45px;
+  font-weight: bold;
+}
+.popup_signin form p{
+  padding-top: 20px;
+  font-weight: 600;
+}
+.popup_signin .createAccountButton{
+  margin: 20px 0;
+  width: 200px;
+  height: 45px;
+  font-weight: bold;
+}
+.popup_signin .createAccountButton a{
+  color: black;
+}
+.popup_signin form > a{
+  color:  blue;
+  position: absolute;
+  left: 30%;
+  font-size: 13px;
+}
+.popup_signin .closeIcon{
+  position: absolute;
+  right: 6%;
+  top: 5%;
+  font-size: 20px;
+}
+/* signin popup form ends*/
+
+
+
+/* signup popup form starts*/
+.popup_signup {
+  position: fixed;
+  top: 5%;
+  left: 33%;
+  transform: translate(-50%-50%);
+  width: 480px;
+  height: 700px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgb(141, 141, 141);
+  background: white;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.3s ease;
+  font-style: normal;
+  transform: translateY(20px);
+}
+.signupBtnActive {
+  visibility: visible;
+  opacity: 1;
+  /* z-index: 1; */
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+/* signup popup form ends*/
+
 
 nav > div:nth-child(1) > div:nth-child(6) {
   /* heart shape */
