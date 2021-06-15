@@ -208,7 +208,10 @@ button {
   text-align: center;
   cursor: pointer;
 }
-
+#responsiveNav a {
+  text-decoration: none;
+  color: grey;
+}
 #responsiveNav img {
   width: 60%;
   margin: auto;
