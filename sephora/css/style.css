@@ -305,16 +305,13 @@ a {
 }
 .productList::-webkit-scrollbar {
   visibility: hidden;
+  height: 0;
 }
 .productList > div {
-  /* width: 150px; */
-  /* background-color: blueviolet; */
-  /* margin: 3.5%; */
   text-align: center;
-  /* width: 300px; */
-  /* min-width: 100px; */
+
   min-width: 16.6%;
-  /* display: none; */
+
   position: relative;
   left: 0;
   cursor: pointer;
