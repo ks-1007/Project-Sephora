@@ -116,11 +116,68 @@ function signinToggle() {
     // blur.setAttribute('class', 'signinBtnActive');
 }
 
+function signup(e) {
+    let form = document.getElementById('signup_form')
+    let firstName = form.fname.value;
+    let lastName = form.lname.value;
+    let email = form.email.value;
+    let password = form.password.value;
+    let phone = form.phone.value;
+
+    if (firstName == '' || lastName == '' ||  email == '' || password == '') {
+        
+        alert('All fields should be filled')
+    } else {
+
+        let users = {
+            firstName,
+            lastName,
+            email,
+            password,
+            phone
+        }
+
+        let arr = localStorage.getItem('users')
+
+        if (arr == null) {
+            arr = []
+        } else {
+            arr = JSON.parse(arr)
+        }
+        arr.push(users)
+        localStorage.setItem('users', JSON.stringify(arr))
+    }
+
+    form.fname.value = ''
+    form.lname.value = ''
+    form.email.value = ''
+    form.password.value = ''
+    form.phone.value = ''
+}
+
 function signin(e) {
     e.preventDefault();
+    let users_data = JSON.parse(localStorage.getItem('users'))
     let form = document.getElementById('signin_form')
-    let mail = form.email.value;
+    let email = form.email.value;
+    console.log('email: ', email);
     let password = form.password.value;
+    console.log('password: ', password);
+
+    if (email == '' || password == '') {
+        alert('all field should be filled')
+    } else {
+
+        for (var i = 0; i < users_data.length; i++) {
+        
+            if (email == users_data[i].email && password == users_data[i].password) {
+                alert('Sucess')
+                let userDisplay_name = document.getElementById('userDisplay_name');
+                userDisplay_name.textContent = users_data[i].firstName;
+            }
+            
+        }
 
     
+    }
 }
