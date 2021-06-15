@@ -118,14 +118,14 @@ nav > div:nth-child(2) a {
 .main_container {
   width: 70%;
   /* height: 100%; */
-  background-color: royalblue;
+  /* background-color: royalblue; */
   margin: auto;
   display: grid;
   grid-template-columns: 20% 80%;
 }
 .main_container > .menubar {
   /* width: 30%; */
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   padding-right: 30%;
   padding-top: 6%;
   display: flex;
@@ -152,7 +152,7 @@ nav > div:nth-child(2) a {
 
 .main_container > .products {
   /* width: 70%; */
-  background-color: mediumpurple;
+  /* background-color: mediumpurple; */
   border-left: 1px solid black;
   margin-top: 34px;
   padding: 2%;
