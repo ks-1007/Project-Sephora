@@ -111,9 +111,14 @@ function prevBtn5(list) {
 
 function signinToggle() {  
      var popup_signin = document.getElementById('popup_signin');
-    popup_signin.classList.add('signinBtnActivee');
+    popup_signin.classList.add('signinBtnActive');
     //  var blur = document.getElementById('body');
     // blur.setAttribute('class', 'signinBtnActive');
+}
+
+function signupToggle() {  
+     var popup_signin = document.getElementById('popup_signup');
+    popup_signin.classList.add('signupBtnActive');
 }
 
 function signup(e) {

@@ -228,7 +228,7 @@
               <ul class="sub_menu">
                 <li class="menu-items signinBtnLogo"><a href="#"><img src="https://community.sephora.com/t5/image/serverpage/avatar-name/default-avatar/avatar-theme/sephora/avatar-collection/sephora/avatar-display-size/profile/version/4" alt="" width="50px"><span>Good Evening Beautiful.<p>Sign in for a more personalized experience.</p></span>
                 </a></li>
-                <li class="menu-items signinBtn"><a href="#"><button onclick="signinToggle()">Sign In</button><button> Create Account</button>
+                <li class="menu-items signinBtn"><a href="#"><button onclick="signinToggle()">Sign In</button><button onclick="signupToggle()"> Create Account</button>
                   </a></li>
                 <li class="menu-items beautyInsider"><a href="#"><span>Beauty insider summery<p>View activity, savings, benifits</p></span><img src="https://www.sephora.com/img/ufe/bi/logo-bi-stacked.svg" alt="" width="60px"></a></li>
                 <li class="menu-items"><a href="#"><span>Rewards Bazar <p>Redeem items,samples,more</p></span></a></li>
@@ -246,17 +246,60 @@
             </div>
             <div id="popup_signin" class="popup_signin">
               <p>Signin To Sephora</p> 
+              <i class="fas fa-times closeIcon" onclick="signinToggle()"></i>
               <form id="signin_form">
-                <input type="email" placeholder="Emailaddress" id="email"><br>
+                <input type="email" placeholder="Email Address" id="email"><br>
                 <input type="password" placeholder="password" id="password"><br>
-                <input type="checkbox">Keep me signed in <a href="">forgot password?</a> <br>
+                <div>
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox">Keep me Signed in <i class="fas fa-info-circle"></i></label>
+                  <a href="">forgot password?</a>
+                </div>
                 <button class="signinButton" onclick="signin(event)">Sign In</button>
                 <br>
+              <hr>
                 <p>New to Sephora?</p>
                 <button class="createAccountButton"> <a href="registration_form.html">Create Account</a></button> <br>
                 <a href="">Term of Use & Privacy policy</a>
               </form>
             </div>
+
+            <div id="popup_signup" class="popup_signup">
+              <div>
+                <p>Create Account</p>
+              </div>
+              <div>
+                <img src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg" alt="">
+                <p>Join the Beauty Insider loyalty program. Earn points, redeem rewards, and more</p>
+                <form id="signup_form">
+                  <input type="text" placeholder="First name" id="fname">
+                  <input type="text" placeholder="Last name" id="lname">
+                  <input type="email" placeholder="Email address" id="email">
+                  <input type="password" placeholder="Password (6 to12 character)" id="password">
+                  <input type="number" placeholder="Phone number (optional)" id="phone">
+                  <p>Enter your birthdate to recieve a free gift every year.</p>
+                  <select name="" id="DOM_month">
+                    <option value="">Month</option>
+                  </select>
+                  <select name="" id="DOB_day">
+                    <option value="">Day</option>
+                  </select><br>
+                  <input type="text" placeholder="ZIP Code (to hear about store events near you)"><br>
+                  <input type="checkbox">
+                  <p>Keep me signed in</p>
+              
+                </form><button id="signup" onclick="signup(event)">Join Now</button>
+              </div>
+              <div>
+                <p>By clicking “Join Now” you acknowledge that you are a U.S. or Canada resident and agree to Sephora’s Privacy
+                  Policy,
+                  Terms of Use, Beauty Insider Terms, and to automatically receive Beauty Insider offers and notifications via email.
+              
+                  Sephora uses Google ReCaptcha and by registering, users are subject to Google’s privacy policy & terms.</p>
+              </div>
+              
+            </div>
+
           </div>
         </div>
         <div id="favourite">
