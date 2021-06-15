@@ -175,7 +175,7 @@ nav > div:nth-child(2) a {
   grid-gap: 50px 15px;
 }
 .main_container > .products > .productItems > .item {
-  background-color: hotpink;
+  /* background-color: hotpink; */
   display: flex;
   flex-direction: column;
   align-items: center;
