@@ -4,8 +4,8 @@ function nextBtn1(list) {
     let itemList = document.getElementsByClassName(list)
     for (var i of itemList) {
         if(l1===0){i.style.left="0px";}
-        if(l1===1){i.style.left="-700px";}
-        if(l1===2){i.style.left="-1400px";}
+        if(l1===1){i.style.left="-600px";}
+        if(l1===2){i.style.left="-1200px";}
         if (l1 > 2) { l1 = 2;}
     }
 }
@@ -14,8 +14,8 @@ function prevBtn1(list) {
     let itemList = document.getElementsByClassName(list)
     for (var i of itemList) {
         if(l1===0){i.style.left="0px";}
-        if(l1===1){i.style.left="-700px";}
-        if(l1===2){i.style.left="-1400px";}
+        if(l1===1){i.style.left="-600px";}
+        if(l1===2){i.style.left="-1200px";}
         if (l1 < 0) { l1 = 0;}
     }
 }

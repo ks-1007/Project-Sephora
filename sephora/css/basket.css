@@ -1,5 +1,5 @@
 #basketCont {
-  width: 80%;
+  width: 70%;
   margin: auto;
   display: grid;
   grid-template-columns: 65% 31%;
@@ -45,7 +45,6 @@
   border: 2px solid rgb(219, 219, 219);
   padding: 3%;
   margin: 1%;
-  height: 300px;
 }
 #payment > div {
   width: 100%;
@@ -70,11 +69,13 @@
   color: white;
   font-weight: bold;
   border: none;
+  margin: 2% auto;
 }
 #payment > div:nth-of-type(5) > button {
   background-color: white !important;
   border: 2px solid black;
   font-weight: bold;
+  margin: 2% auto;
 }
 #payment > div:nth-of-type(1),
 #payment > div:nth-of-type(2) {
@@ -91,7 +92,7 @@
   justify-content: space-between;
 }
 #estimatedCont > div:nth-of-type(1) {
-  width: 200px;
+  width: 100%;
 }
 #promo {
   margin: 20px 0;
@@ -146,6 +147,14 @@
 }
 .productList {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  overflow-x: auto;
+}
+.productList::-webkit-scrollbar {
+  visibility: hidden;
+  height: 0;
 }
 .productList > div {
   min-width: 25%;
@@ -220,6 +229,7 @@
   border: 2px solid rgb(218, 218, 218);
   padding: 5%;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #assistance > div {
@@ -260,5 +270,13 @@
   #basketCont {
     display: flex;
     flex-direction: column;
+    width: 90%;
+  }
+  .productList > div {
+    min-width: 50%;
+  }
+  .productList button {
+    display: block;
+    margin: auto;
   }
 }
