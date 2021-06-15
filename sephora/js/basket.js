@@ -100,26 +100,71 @@ if (cartitems != null) {
         `;
         randomInfo.style.fontSize = "14px";
         randomInfo.style.color = "gray"
-        totalprice += cartitems[key].price * cartitems[key].quantity;
-        itemcount += cartitems[key].quantity;
+        
+        
         quantity.innerHTML = cartitems[key].quantity;
         let imagediv = document.createElement("div");
         let infodiv = document.createElement("div")
-        let quantitydiv = document.createElement("div")
+        var quantitySelect = document.createElement("select")
+        
+        let option1 = document.createElement("option")
+        let option2 = document.createElement("option")
+        let option3 = document.createElement("option")
+        let option4 = document.createElement("option")
+        let option5 = document.createElement("option")
+        let option6 = document.createElement("option")
+        let option7 = document.createElement("option")
+        let option8 = document.createElement("option")
+        let option9 = document.createElement("option")
+        let option10 = document.createElement("option")
+        option1.innerHTML = "1"
+        option2.innerHTML ="2"
+        option3.innerHTML ="3"
+        option4.innerHTML ="4"
+        option5.innerHTML ="5"
+        option6.innerHTML ="6"
+        option7.innerHTML ="7"
+        option8.innerHTML ="8"
+        option9.innerHTML ="9"
+        option10.innerHTML = "10"
+        option1.value = "1"
+        option2.value ="2"
+        option3.value ="3"
+        option4.value ="4"
+        option5.value ="5"
+        option6.value ="6"
+        option7.value ="7"
+        option8.value ="8"
+        option9.value ="9"
+        option10.value = "10"
+        quantitySelect.append(option1,option2,option3,option4,option5,option6,option7,option8,option9,option10)
+        quantitySelect.value = String(cartitems[key].quantity);
+        itemcount += Number(quantitySelect.value);
+        totalprice += cartitems[key].price * Number(quantitySelect.value);
+        cartitems[key].quantity = Number(quantitySelect.value)
+        localStorage.setItem("cartList", JSON.stringify(cartitems))
         let pricediv = document.createElement("div");
         let removebutton = document.createElement("button");
         removebutton.innerHTML = `<button onclick="removeFromCart('${key}')">REMOVE</button>`
         imagediv.append(image);
         infodiv.append(brand, desc, randomInfo)
-        quantitydiv.append(quantity)
+        // quantitydiv.append(quantity)
         pricediv.append(price, removebutton);
-        parentdiv.append(imagediv, infodiv, quantitydiv, pricediv);
+        parentdiv.append(imagediv, infodiv, quantitySelect, pricediv);
         cart.append(parentdiv);
         totalpriceCont.innerHTML = `<h4>$${totalprice}</h4>`;
         estimated.innerHTML = `<h4>$${totalprice}</h4>`;
         itemcountContainer.innerHTML = `Items in basket (${itemcount})`
+        quantitySelect.onchange = selectChange;
+
     }
+    
 }
+
+function selectChange() {
+    document.location.reload();
+}
+
 if (cartitems == null || Object.keys(cartitems).length === 0) {
     cart.innerHTML =
         
@@ -140,3 +185,4 @@ function removeFromCart(item) {
     localStorage.setItem("cartList", JSON.stringify(cartitems));
     document.location.reload()
 }
+
