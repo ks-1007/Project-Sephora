@@ -174,13 +174,13 @@ select {
   display: flex;
   flex-direction: rows;
 }
-.similar_product div {
+/* .similar_product div {
   margin: 10px;
   width: 200px;
   height: 200px;
 
-  /* background-color:rgb(151, 39, 39); */
-}
+   background-color:rgb(151, 39, 39); 
+} */
 
 .similar_product img {
   width: 200px;
@@ -203,15 +203,15 @@ img:hover {
   width: 0;
 }
 
-.similar_product div {
+.similar_product > div {
   height: 50%;
-  width: 300px;
-  margin: 10px;
+  min-width: 15%;
+  margin: 0 2%;
   /* background-color:rgb(250, 248, 248); */
 }
 
 .similar_product img {
-  width: 100%;
+  width: 80%;
   height: 60%;
   cursor: pointer;
 }
@@ -247,6 +247,10 @@ img:hover {
   height: 100px;
   margin-left: 10%;
   font-family: serif;
+}
+
+#itemPageCont {
+  width: 90%;
 }
 
 /* Media Quary  */
