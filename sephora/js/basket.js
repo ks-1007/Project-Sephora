@@ -190,3 +190,17 @@ function removeFromCart(item) {
     document.location.reload()
 }
 
+function applyPromo() {
+    let promo = document.getElementById("promocode").value;
+
+    
+    
+    if (promo == "masai30") {
+        totalpriceCont.innerHTML = `<h4>$${totalprice*0.7}</h4>`;//updates price in dom
+        estimated.innerHTML = `<h4>$${totalprice*0.7}</h4>`;//updates price in dom
+        alert("promocode applied!")
+        
+    } else {
+        alert("invalid promocode")
+    }
+}
