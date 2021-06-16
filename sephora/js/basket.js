@@ -29,7 +29,7 @@ let products = {
         brand: "KVD Beauty",
         desc: "Everlasting Blush Refills",
         price: 25,
-        image:"https://www.sephora.com/productimages/sku/s2452266-main-zoom.jpg?imwidth=135&pb=2020-03-sephora-clean-2019&imwidth=97"
+        image:"https://www.sephora.com/productimages/sku/s2413334-main-zoom.jpg?imwidth=135&imwidth=97"
     },
     item2:{
         class: "item2",
