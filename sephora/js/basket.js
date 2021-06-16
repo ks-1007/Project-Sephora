@@ -1,4 +1,6 @@
-let l1=0
+
+// for product carousel
+let l1 = 0
 function nextBtn1(list) {
     l1++
     let itemList = document.getElementsByClassName(list)
@@ -20,6 +22,7 @@ function prevBtn1(list) {
     }
 }
 
+//for adding products on cart in basket page
 let products = {
     item1:{
         class: "item1",
@@ -52,12 +55,13 @@ let products = {
 }
 
 localStorage.setItem('productList', JSON.stringify(products));
-let totalprice = 0;
-let itemcount = 0;
-let itemcountContainer = document.getElementById("itemNo");
-let totalpriceCont = document.getElementById("merchandiseTotal")
-let remainingForFreeShippingCont = document.getElementById("remainingForFreeShipping")
-let remainingForFreeShipping;
+
+let totalprice = 0;// takes care of changing total prices of items in cart
+let itemcount = 0;// takes care of changing total counts of items in cart
+let itemcountContainer = document.getElementById("itemNo"); // where we have to update total count of items in cart
+let totalpriceCont = document.getElementById("merchandiseTotal") // where we have to update total price of items in cart
+let remainingForFreeShippingCont = document.getElementById("remainingForFreeShipping")// where we have to update total remaining for free shipping
+let remainingForFreeShipping;//takes care of total remaining for free shipping
 function addToCart(item) {
     let products = JSON.parse(localStorage.getItem('productList'));
     let elem = products[item];
@@ -79,7 +83,7 @@ function addToCart(item) {
 
 let cart = document.getElementById("cart");
 let cartitems = JSON.parse(localStorage.getItem("cartList"));
-let estimated = document.getElementById("estimatedTotal")
+let estimated = document.getElementById("estimatedTotal")// where we have to update total price of cart in right side of page
 if (cartitems != null) {
     cart.innerHTML = null;
     for (key in cartitems) {
@@ -87,7 +91,7 @@ if (cartitems != null) {
         let image = document.createElement("img");
         let brand = document.createElement("h4")
         let desc = document.createElement("p")
-        let quantity = document.createElement("p")
+        // let quantity = document.createElement("p")
         let price = document.createElement("h4")
         let randomInfo = document.createElement("p")
         image.src = cartitems[key].image;
@@ -105,7 +109,7 @@ if (cartitems != null) {
         quantity.innerHTML = cartitems[key].quantity;
         let imagediv = document.createElement("div");
         let infodiv = document.createElement("div")
-        var quantitySelect = document.createElement("select")
+        var quantitySelect = document.createElement("select")//added select functionality in cart
         
         let option1 = document.createElement("option")
         let option2 = document.createElement("option")
@@ -138,11 +142,11 @@ if (cartitems != null) {
         option9.value ="9"
         option10.value = "10"
         quantitySelect.append(option1,option2,option3,option4,option5,option6,option7,option8,option9,option10)
-        quantitySelect.value = String(cartitems[key].quantity);
-        itemcount += Number(quantitySelect.value);
-        totalprice += cartitems[key].price * Number(quantitySelect.value);
-        cartitems[key].quantity = Number(quantitySelect.value)
-        localStorage.setItem("cartList", JSON.stringify(cartitems))
+        quantitySelect.value = String(cartitems[key].quantity);// increases quantity in cart if add items is clicked multiple times
+        itemcount += Number(quantitySelect.value);//updates total count
+        totalprice += cartitems[key].price * Number(quantitySelect.value);//updates total price
+        cartitems[key].quantity = Number(quantitySelect.value)//failed attempt to increase quantity of item in local storage when selected using select tag
+        localStorage.setItem("cartList", JSON.stringify(cartitems))//failed attempt to increase quantity of item in local storage when selected using select tag
         let pricediv = document.createElement("div");
         let removebutton = document.createElement("button");
         removebutton.innerHTML = `<button onclick="removeFromCart('${key}')">REMOVE</button>`
@@ -152,18 +156,18 @@ if (cartitems != null) {
         pricediv.append(price, removebutton);
         parentdiv.append(imagediv, infodiv, quantitySelect, pricediv);
         cart.append(parentdiv);
-        totalpriceCont.innerHTML = `<h4>$${totalprice}</h4>`;
-        estimated.innerHTML = `<h4>$${totalprice}</h4>`;
-        itemcountContainer.innerHTML = `Items in basket (${itemcount})`
-        quantitySelect.onchange = selectChange;
+        totalpriceCont.innerHTML = `<h4>$${totalprice}</h4>`;//updates price in dom
+        estimated.innerHTML = `<h4>$${totalprice}</h4>`;//updates price in dom
+        itemcountContainer.innerHTML = `Items in basket (${itemcount})`//updates count in dom
+        // quantitySelect.onchange = selectChange;
 
     }
     
 }
 
-function selectChange() {
-    document.location.reload();
-}
+// function selectChange() {
+//     document.location.reload();
+// }
 
 if (cartitems == null || Object.keys(cartitems).length === 0) {
     cart.innerHTML =
