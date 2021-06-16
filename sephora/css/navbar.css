@@ -113,7 +113,7 @@ button {
   position: absolute;
   top: 107px;
   visibility: hidden;
-  z-index: 1;
+  z-index: 2;
 }
 .modal {
   width: 100%;
