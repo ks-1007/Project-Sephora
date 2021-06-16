@@ -14,7 +14,8 @@
 }
 .footer_container {
   background-color: black;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -67,10 +68,12 @@
   margin: 5px 50px;
   padding: 10px;
   display: flex;
+  /* background: royalblue; */
 }
 
 .container2 .item {
   height: 95%;
+  /* background: rosybrown; */
   margin: 10px;
   flex-grow: 1;
   padding: 10px;
@@ -80,7 +83,7 @@
 .container2 .item > h4 {
   font-style: normal;
 }
-.container2 .item > p {
+.container2 .item .content > p {
   font-size: 13px;
   margin: 10px 0px;
 }
@@ -178,3 +181,62 @@
   font-size: 22px;
 }
 /* end footer bottom container */
+
+@media screen and (max-width: 1199px) {
+  .container1 {
+    flex-direction: column;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+  .container3 {
+    flex-direction: column;
+  }
+  .container2 .item5 div {
+    margin-top: 5%;
+  }
+  .right-icons {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100px;
+  }
+  .right-icons .icon_item {
+    margin: 8px;
+  }
+
+  .container2 .item1 {
+    position: relative;
+  }
+  .container2 .item1 .label {
+    position: relative;
+    /* background-color: teal; */
+    border-bottom: 0.5px solid rgb(141, 141, 141);
+    padding: 10px;
+    cursor: pointer;
+  }
+  .container2 .item1 .label::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+   .container2 .item1.active .label::before{
+     content: '-';
+   }
+  .container2 .item1 .content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+  .container2 .item1.active .content {
+    height: 350px;
+    padding: 10px;
+  }
+  .container2 .item1 .content::-webkit-scrollbar{
+    width: 1px;
+  }
+}
