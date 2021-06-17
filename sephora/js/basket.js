@@ -179,7 +179,7 @@ if (cartitems == null || Object.keys(cartitems).length === 0) {
         
         `
             <h4>Your basket is currently empty.</h4>
-            <button id="emptyCartBtn">Shop New Arrivals</button>
+            <button id="emptyCartBtn" onclick="window.location.href='productPage.html'">Shop New Arrivals</button>
         `
 }
 if (totalprice < 50) {
