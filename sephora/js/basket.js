@@ -145,41 +145,34 @@ if (cartitems != null) {
         quantitySelect.value = String(cartitems[key].quantity);// increases quantity in cart if add items is clicked multiple times
         quantitySelect.setAttribute("id", `${key}`)
         quantitySelect.addEventListener("change", function () {
-            console.log('key:', this.value)
-            console.log('id:', this.id)
+            
             cartitems[this.id].quantity = Number(this.value)
-            // console.log('cartitems:', cartitems)
-            // console.log(cartitems[key])
-            // let quantityValue = document.getElementById(`${key}select`).value;
-            // cartitems[key].quantity = Number(quantityValue)
+            
             localStorage.setItem("cartList", JSON.stringify(cartitems));
             document.location.reload();
         })
         itemcount += Number(quantitySelect.value);//updates total count
         totalprice += cartitems[key].price * Number(quantitySelect.value);//updates total price
-      //  cartitems[key].quantity = Number(quantitySelect.value)//failed attempt to increase quantity of item in local storage when selected using select tag
-       // localStorage.setItem("cartList", JSON.stringify(cartitems))//failed attempt to increase quantity of item in local storage when selected using select tag
+      
         let pricediv = document.createElement("div");
         let removebutton = document.createElement("button");
         removebutton.innerHTML = `<button onclick="removeFromCart('${key}')">REMOVE</button>`
         imagediv.append(image);
         infodiv.append(brand, desc, randomInfo)
-        // quantitydiv.append(quantity)
+        
         pricediv.append(price, removebutton);
         parentdiv.append(imagediv, infodiv, quantitySelect, pricediv);
         cart.append(parentdiv);
         totalpriceCont.innerHTML = `<h4>$${totalprice}</h4>`;//updates price in dom
         estimated.innerHTML = `<h4>$${totalprice}</h4>`;//updates price in dom
         itemcountContainer.innerHTML = `Items in basket (${itemcount})`//updates count in dom
-        // quantitySelect.onchange = selectChange;
+        
 
     }
     
 }
 
-// function selectChange() {
-//     document.location.reload();
-// }
+
 
 if (cartitems == null || Object.keys(cartitems).length === 0) {
     cart.innerHTML =
@@ -195,8 +188,7 @@ if (totalprice < 50) {
     remainingForFreeShippingCont.innerHTML = "You now qualify for Free Shipping!"
 }
 function removeFromCart(item) {
-    // totalprice -= cartitems[item].price;
-    // totalpriceCont.innerHTML = `$${totalprice}`;
+    
     delete cartitems[item];
     localStorage.setItem("cartList", JSON.stringify(cartitems));
     document.location.reload()
