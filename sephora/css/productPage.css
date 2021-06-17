@@ -116,12 +116,14 @@ nav > div:nth-child(2) a {
   margin: 15% 0;
 }
 .main_container {
-  width: 70%;
+  width: 80%;
   /* height: 100%; */
   /* background-color: royalblue; */
   margin: auto;
   display: grid;
   grid-template-columns: 20% 80%;
+  justify-content: center;
+  /* overflow-x: scroll; */
 }
 .main_container > .menubar {
   /* width: 30%; */
@@ -151,12 +153,13 @@ nav > div:nth-child(2) a {
 }
 
 .main_container > .products {
-  /* width: 70%; */
+  width: 100%;
   /* background-color: mediumpurple; */
   border-left: 1px solid black;
   margin-top: 34px;
   padding: 2%;
   display: grid;
+  overflow-x: scroll;
 }
 
 .main_container > .products > div:first-child {
@@ -181,7 +184,7 @@ nav > div:nth-child(2) a {
   align-items: center;
   justify-items: center;
   text-align: center;
-  font-size: 13px;
+  font-size: 0.80rem;
   font-weight: bold;
   padding: 0px 10px 10px;
 }
@@ -190,6 +193,7 @@ nav > div:nth-child(2) a {
   text-decoration: none;
   color: black;
 }
+
 .main_container > .products > .productItems > .item a:hover {
   text-decoration: underline;
 }
@@ -197,7 +201,7 @@ nav > div:nth-child(2) a {
   margin: 1px 0px;
 }
 .main_container > .products > .productItems > .item > p:nth-child(2) {
-  font-size: 11px;
+  font-size: 0.80rem;
 }
 .main_container > .products > .productItems > .item > span {
   display: flex;
@@ -211,3 +215,92 @@ nav > div:nth-child(2) a {
   font-size: 14px;
   font-weight: 500;
 }
+
+@media (max-width: 800px) {
+  .modalCont {
+    display: none;
+  }
+  #stores,
+  #community,
+  #signin {
+    display: none;
+  }
+  #favourite,
+  #basket {
+    width: 6%;
+  }
+  nav > div:nth-of-type(1) {
+    border-bottom: 1px solid rgb(219, 219, 219);
+  }
+  nav > div:nth-of-type(2) {
+    background-color: white;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    overflow-y: hidden;
+  }
+  nav > div:nth-of-type(2)::-webkit-scrollbar {
+    visibility: hidden;
+    height: 0;
+  }
+  nav > div:nth-of-type(2) a {
+    color: black;
+  }
+  nav > div:nth-of-type(2) > div {
+    border: 1px solid rgb(206, 206, 206);
+    margin: 1%;
+    /* height: 20px; */
+    border-radius: 3px;
+    padding: 1%;
+    min-width: auto;
+  }
+  nav > div:nth-of-type(1) > div:nth-of-type(1) {
+    width: 20%;
+  }
+  nav > div:nth-of-type(1) > div:nth-of-type(2) {
+    width: 50%;
+  }
+  .main_container > .products > .productItems > .item  img{
+  width: 6em;
+}
+}
+/* 
+#responsiveNav {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  font-size: 12px;
+  text-align: center;
+  height: 70px;
+  color: gray;
+  border-top: 0.5px solid rgb(221, 221, 221);
+  position: fixed;
+  bottom: 0;
+}
+#responsiveNav > div {
+  width: 8.3%;
+  text-align: center;
+  cursor: pointer;
+}
+#responsiveNav a {
+  text-decoration: none;
+  color: grey;
+}
+#responsiveNav img {
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 800px) {
+  #responsiveNav {
+    visibility: visible;
+  }
+} */
