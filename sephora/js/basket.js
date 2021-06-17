@@ -143,10 +143,22 @@ if (cartitems != null) {
         option10.value = "10"
         quantitySelect.append(option1,option2,option3,option4,option5,option6,option7,option8,option9,option10)
         quantitySelect.value = String(cartitems[key].quantity);// increases quantity in cart if add items is clicked multiple times
+        quantitySelect.setAttribute("id", `${key}`)
+        quantitySelect.addEventListener("change", function () {
+            console.log('key:', this.value)
+            console.log('id:', this.id)
+            cartitems[this.id].quantity = Number(this.value)
+            // console.log('cartitems:', cartitems)
+            // console.log(cartitems[key])
+            // let quantityValue = document.getElementById(`${key}select`).value;
+            // cartitems[key].quantity = Number(quantityValue)
+            localStorage.setItem("cartList", JSON.stringify(cartitems));
+            document.location.reload();
+        })
         itemcount += Number(quantitySelect.value);//updates total count
         totalprice += cartitems[key].price * Number(quantitySelect.value);//updates total price
-        cartitems[key].quantity = Number(quantitySelect.value)//failed attempt to increase quantity of item in local storage when selected using select tag
-        localStorage.setItem("cartList", JSON.stringify(cartitems))//failed attempt to increase quantity of item in local storage when selected using select tag
+      //  cartitems[key].quantity = Number(quantitySelect.value)//failed attempt to increase quantity of item in local storage when selected using select tag
+       // localStorage.setItem("cartList", JSON.stringify(cartitems))//failed attempt to increase quantity of item in local storage when selected using select tag
         let pricediv = document.createElement("div");
         let removebutton = document.createElement("button");
         removebutton.innerHTML = `<button onclick="removeFromCart('${key}')">REMOVE</button>`
