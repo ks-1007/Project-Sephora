@@ -409,7 +409,7 @@ nav > div:nth-child(1) > div:nth-child(3):hover {
 }
 .popup_signin input {
   width: 100%;
-  color: red;
+  /* color: red; */
   padding: 12px 10px;
   margin: 5px 0;
   border-radius: 4px;
