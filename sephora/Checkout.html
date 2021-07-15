@@ -18,44 +18,48 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/checkout.css" />
     <title>Checkout Page</title>
   </head>
   <body>
     <nav>
       <a href="./sephora.html">SEPHORA</a>
     </nav>
-    <div id="checkoutPageCont">
+    <div class="checkoutPageCont">
       <h1>Checkout</h1>
       <hr />
       <section class="div">
-        <div id="div1">
+        <div class="div1">
           <h1>1. Shipping Address</h1>
 
-          <form id="form" class="shiping-address">
-            <input type="text" placeholder="First Name*" id="first" />
+          <form class="form" class="shiping-address">
+            <input type="text" placeholder="First Name*" class="first" />
 
-            <input type="text" placeholder="Last Name*" id="last" /> <br />
+            <input type="text" placeholder="Last Name*" class="last" /> <br />
 
-            <input type="number" placeholder="Phone*" id="phone" /><br />
+            <input type="number" placeholder="Phone*" class="phone" /><br />
 
-            <input type="text" placeholder="Street address*" id="street" />
+            <input type="text" placeholder="Street address*" class="street" />
             <br />
 
             <a href="#">Add Apt #, Floor, etc.</a><br />
 
-            <input type="number" placeholder="Zip/Postal code*" id="zipcode" />
+            <input
+              type="number"
+              placeholder="Zip/Postal code*"
+              class="zipcode"
+            />
             <span
               ><b>Enter ZIP/Postal code to see City and State/Region</b> </span
             ><br />
 
-            <button type="submit" id="butn">Save & Continue</button>
+            <button type="submit" class="butn">Save & Continue</button>
           </form>
 
           <hr />
         </div>
 
-        <div id="div2">
+        <div class="div2">
           <h1>2. Delivery & Gift Options</h1>
           <h2>Free - Standard</h2>
           <p>Order Within 4 Hours</p>
@@ -64,7 +68,7 @@
           <hr />
         </div>
 
-        <div id="div3">
+        <div class="div3">
           <h1>3. Payment Method</h1>
 
           <table>
@@ -73,14 +77,14 @@
                 <input
                   type="checkbox"
                   class="checkbox"
-                  id="payPal"
+                  class="payPal"
                   onclick="checkbox()"
                 />
               </th>
               <th>
                 <img
                   src="https://www.sephora.com/img/ufe/payments/payPal.svg"
-                  id="paypal"
+                  class="paypal"
                 />
               </th>
               <th>
@@ -93,14 +97,14 @@
                 <input
                   type="checkbox"
                   class="checkbox"
-                  id="emi"
+                  class="emi"
                   onclick="checkbox()"
                 />
               </th>
               <th>
                 <img
                   src="https://www.sephora.com/img/ufe/payments/klarna.svg"
-                  id="paypal"
+                  class="paypal"
                 />
               </th>
               <th>
@@ -115,7 +119,7 @@
               <th>
                 <img
                   src="https://www.sephora.com/img/ufe/payments/placeholder.svg"
-                  id="paypal"
+                  class="paypal"
                 />
               </th>
               <th>
@@ -126,7 +130,7 @@
               <tr>
                 <th><i class="fa fa-align-justify"></i></th>
                 <th>
-                  <select id="sort" name="">
+                  <select class="sort" name="">
                     <option value="gift">Add gift card</option>
                   </select>
                 </th>
@@ -135,7 +139,7 @@
 
             <th>
               <tr>
-                <button id="butn" type="button">Save & Continue</button>
+                <button class="butn" type="button">Save & Continue</button>
               </tr>
             </th>
           </table>
@@ -143,7 +147,7 @@
           <hr />
         </div>
 
-        <div id="div4">
+        <div class="div4">
           <h1>4. Review & Place Order</h1>
           <p>Please review your order information before placing your order.</p>
         </div>

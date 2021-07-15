@@ -184,7 +184,7 @@ nav > div:nth-child(2) a {
   align-items: center;
   justify-items: center;
   text-align: center;
-  font-size: 0.80rem;
+  font-size: 0.8rem;
   font-weight: bold;
   padding: 0px 10px 10px;
 }
@@ -201,7 +201,7 @@ nav > div:nth-child(2) a {
   margin: 1px 0px;
 }
 .main_container > .products > .productItems > .item > p:nth-child(2) {
-  font-size: 0.80rem;
+  font-size: 0.8rem;
 }
 .main_container > .products > .productItems > .item > span {
   display: flex;
@@ -220,13 +220,13 @@ nav > div:nth-child(2) a {
   .modalCont {
     display: none;
   }
-  #stores,
-  #community,
-  #signin {
+  .stores,
+  .community,
+  .signin {
     display: none;
   }
-  #favourite,
-  #basket {
+  .favourite,
+  .basket {
     width: 6%;
   }
   nav > div:nth-of-type(1) {
@@ -264,12 +264,12 @@ nav > div:nth-child(2) a {
   nav > div:nth-of-type(1) > div:nth-of-type(2) {
     width: 50%;
   }
-  .main_container > .products > .productItems > .item  img{
-  width: 6em;
-}
+  .main_container > .products > .productItems > .item img {
+    width: 6em;
+  }
 }
 /* 
-#responsiveNav {
+.responsiveNav {
   visibility: hidden;
   display: flex;
   flex-direction: row;
@@ -286,21 +286,21 @@ nav > div:nth-child(2) a {
   position: fixed;
   bottom: 0;
 }
-#responsiveNav > div {
+.responsiveNav > div {
   width: 8.3%;
   text-align: center;
   cursor: pointer;
 }
-#responsiveNav a {
+.responsiveNav a {
   text-decoration: none;
   color: grey;
 }
-#responsiveNav img {
+.responsiveNav img {
   width: 60%;
   margin: auto;
 }
 @media (max-width: 800px) {
-  #responsiveNav {
+  .responsiveNav {
     visibility: visible;
   }
 } */

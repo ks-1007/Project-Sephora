@@ -83,7 +83,7 @@ nav > div:nth-child(1) > div:nth-child(5) > div .sub_menu,
 nav > div:nth-child(1) > div:nth-child(4) > div .sub_menu,
 nav > div:nth-child(1) > div:nth-child(3) > div .sub_menu,
 nav > div:nth-child(1) > div:nth-child(6) > div .sub_menu,
-nav > div:nth-child(1) > div:nth-child(7) > div .sub_menu   {
+nav > div:nth-child(1) > div:nth-child(7) > div .sub_menu {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 350px;
   height: 600px;
@@ -117,17 +117,17 @@ nav
   > div:nth-child(5)
   > div
   .sub_menu::-webkit-scrollbar-thumb,
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(4)
   > div
   .sub_menu::-webkit-scrollbar-thumb,
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(3)
   > div
   .sub_menu::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: 0;
   border-radius: 20px;
 }
 nav > div:nth-child(1) > div:nth-child(5) > div:hover .sub_menu,
@@ -154,7 +154,7 @@ nav > div:nth-child(1) > div:nth-child(7) > div .sub_menu .menu-items a {
   display: inline-flex;
   padding: 10px 15px;
   font-size: 14px;
-  color: #000000;
+  color: 0;
   font-weight: 500;
   transition: all 0.3s ease;
   align-items: center;
@@ -184,28 +184,28 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(1),
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(4)
   > div
   .sub_menu
   .signinBtn
   button:nth-child(1),
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(7)
   > div
   .sub_menu
   .signinBtn
   button:nth-child(1),
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(6)
   > div
   .sub_menu
   .signinBtn
   button:nth-child(1),
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(3)
   > div
@@ -238,7 +238,7 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(2):hover,
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(4)
   > div
@@ -252,7 +252,7 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(2):hover,
-   nav
+nav
   > div:nth-child(1)
   > div:nth-child(3)
   > div
@@ -266,7 +266,7 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(2):hover,
-   nav
+nav
   > div:nth-child(1)
   > div:nth-child(6)
   > div
@@ -280,7 +280,7 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(2):hover,
-   nav
+nav
   > div:nth-child(1)
   > div:nth-child(7)
   > div
@@ -307,28 +307,28 @@ nav
   .sub_menu
   .signinBtn
   button:nth-child(2),
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(4)
   > div
   .sub_menu
   .signinBtn
   button:nth-child(2),
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(3)
   > div
   .sub_menu
   .signinBtn
   button:nth-child(2),
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(6)
   > div
   .sub_menu
   .signinBtn
   button:nth-child(2),
-  nav
+nav
   > div:nth-child(1)
   > div:nth-child(7)
   > div
@@ -358,7 +358,7 @@ nav > div:nth-child(1) > div:nth-child(3) > div .sub_menu .menu-items a:hover {
   text-decoration: underline;
 }
 
-nav > div:nth-child(1) > div:nth-child(5) > div > img{
+nav > div:nth-child(1) > div:nth-child(5) > div > img {
   width: 35px;
 }
 nav > div:nth-child(1) > div:nth-child(5) > div > img:hover {
@@ -429,7 +429,12 @@ nav > div:nth-child(1) > div:nth-child(3):hover {
   display: none;
 }
 .popup_signin div input[type="checkbox"] + label::before,
-.popup_signup div:nth-child(3) form > div:last-child input[type="checkbox"]+ label::before {
+.popup_signup
+  div:nth-child(3)
+  form
+  > div:last-child
+  input[type="checkbox"]
+  + label::before {
   border: 2px solid rgb(54, 54, 54);
   content: "\2714";
   padding: 0 4px;
@@ -439,7 +444,12 @@ nav > div:nth-child(1) > div:nth-child(3):hover {
   text-align: center;
 }
 .popup_signin div input[type="checkbox"]:checked + label::before,
-.popup_signup div:nth-child(3) form > div:last-child input[type="checkbox"]:checked + label::before {
+.popup_signup
+  div:nth-child(3)
+  form
+  > div:last-child
+  input[type="checkbox"]:checked
+  + label::before {
   background: black;
   color: white;
 }
@@ -515,7 +525,7 @@ nav > div:nth-child(1) > div:nth-child(3):hover {
   transition: all 0.3s ease;
   transform: translateY(0);
 }
-.popup_signup::-webkit-scrollbar{
+.popup_signup::-webkit-scrollbar {
   width: 2px;
 }
 .popup_signup div:nth-child(1) {
@@ -576,24 +586,24 @@ nav > div:nth-child(1) > div:nth-child(3):hover {
   margin: 15px 0;
   font-weight: 600;
 }
-.popup_signup div:nth-child(3) form > div:last-child{
+.popup_signup div:nth-child(3) form > div:last-child {
   display: flex;
   margin: 10px 0 30px 0;
 }
-.popup_signup div:nth-child(3) button{
+.popup_signup div:nth-child(3) button {
   width: 250px;
   margin: 20px 0;
 }
-.popup_signup div:nth-child(5){
+.popup_signup div:nth-child(5) {
   width: 100%;
   font-size: 12px;
   padding: 10px 0;
 }
-.popup_signup div:nth-child(5) > p  a{
+.popup_signup div:nth-child(5) > p a {
   color: royalblue;
   font-style: italic;
 }
-.popup_signup div:nth-child(5) > p  a:hover{
+.popup_signup div:nth-child(5) > p a:hover {
   text-decoration: underline;
 }
 /* signup popup form ends*/
@@ -630,16 +640,16 @@ nav > div:nth-child(2) a {
   color: white;
   text-decoration: none;
 }
-#container {
+.container {
   width: 90%;
   margin: auto;
   text-align: center;
   margin-bottom: 100px;
 }
-#mainImage {
+.mainImage {
   width: 100%;
 }
-#mainImage img {
+.mainImage img {
   width: 100%;
 }
 
@@ -685,7 +695,7 @@ a {
 .productList p {
   margin: 0px;
 }
-#container > div:nth-child(3) {
+.container > div:nth-child(3) {
   /* <!-- advertisements images --> */
   display: flex;
   flex-direction: row;
@@ -695,7 +705,7 @@ a {
   margin: auto;
   margin-bottom: 40px;
 }
-#container > div:nth-child(8) > div {
+.container > div:nth-child(8) > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -711,19 +721,19 @@ a {
   margin: auto;
   overflow: hidden;
 }
-#nextBtn {
+.nextBtn {
   position: absolute;
   top: 30%;
   right: 0px;
   z-index: 1;
 }
-#prevBtn {
+.prevBtn {
   position: absolute;
   top: 30%;
   left: 0px;
   z-index: 1;
 }
-#container button {
+.container button {
   background-color: white;
   color: rgb(8, 8, 8);
   height: 100px;
@@ -746,15 +756,15 @@ h2 {
   .productList > div {
     min-width: 50%;
   }
-  #container {
+  .container {
     width: 100%;
   }
-  #container > div:nth-of-type(3) {
+  .container > div:nth-of-type(3) {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  #container > div:nth-child(8) > div {
+  .container > div:nth-child(8) > div {
     display: flex;
     flex-direction: column;
     width: 100%;
