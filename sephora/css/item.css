@@ -205,13 +205,13 @@ select {
 
 .similar_product > div {
   height: 50%;
-  min-width: 15%;
+  /* min-width: 15%; */
   margin: 0 2%;
   /* background-color:rgb(250, 248, 248); */
 }
 
 .similar_product img {
-  width: 60%;
+  width: 70%;
   height: 50%;
   cursor: pointer;
 }
