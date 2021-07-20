@@ -189,7 +189,7 @@ function prevBtn5(list) {
 }
 
 function signinToggle() {
-  var popup_signin = document.getElementByClassName("popup_signin");
+  var popup_signin = document.getElementById("popup_signin");
   popup_signin.classList.toggle("signinBtnActive");
   //  var blur = document.getElementByClassName('body');
   // blur.setAttribute('class', 'signinBtnActive');
@@ -197,12 +197,12 @@ function signinToggle() {
 
 function signupToggle(e) {
   e.preventDefault();
-  var popup_signup = document.getElementByClassName("popup_signup");
+  var popup_signup = document.getElementById("popup_signup");
   popup_signup.classList.toggle("signupBtnActive");
 }
 
 function signup() {
-  let form = document.getElementByClassName("signup_form");
+  let form = document.getElementById("signup_form");
   let firstName = form.fname.value;
   let lastName = form.lname.value;
   let email = form.email.value;
@@ -250,7 +250,7 @@ function signup() {
 function signin(e) {
   e.preventDefault();
   let users_data = JSON.parse(localStorage.getItem("users"));
-  let form = document.getElementByClassName("signin_form");
+  let form = document.getElementById("signin_form");
   let email = form.email.value;
   console.log("email: ", email);
   let password = form.password.value;
@@ -262,8 +262,7 @@ function signin(e) {
     for (var i = 0; i < users_data.length; i++) {
       if (email == users_data[i].email && password == users_data[i].password) {
         alert("Sucess");
-        let userDisplay_name =
-          document.getElementByClassName("userDisplay_name");
+        let userDisplay_name = document.getElementById("userDisplay_name");
         userDisplay_name.textContent = users_data[i].firstName;
       }
     }
