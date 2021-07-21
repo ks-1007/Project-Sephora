@@ -278,3 +278,15 @@
     margin: auto;
   }
 }
+#nextBtn {
+  position: absolute;
+  top: 30%;
+  right: 0px;
+  z-index: 1;
+}
+#prevBtn {
+  position: absolute;
+  top: 30%;
+  left: 0px;
+  z-index: 1;
+}

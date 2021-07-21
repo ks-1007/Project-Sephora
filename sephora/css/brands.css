@@ -12,7 +12,6 @@
   grid-row-gap: 20px;
 }
 
-
 .brandMainContainer .heading > h1 {
   text-align: center;
   margin: 10px 0;
@@ -70,32 +69,32 @@
   margin: 5px;
   justify-content: space-evenly;
 }
-.brandMainContainer .brandNames .alphabates > div:nth-child(1){
-    text-align: center;
-    font-size: 18px;
+.brandMainContainer .brandNames .alphabates > div:nth-child(1) {
+  text-align: center;
+  font-size: 18px;
 }
-.brandMainContainer .brandNames .alphabates .brandNameItems{
-width: 200px;
-/* background: chocolate; */
-margin: 5px;
-padding: 15px;
-font-size: 16px;
-font-style: italic;
-font-family: 'open sans';
-font-weight: 600;
+.brandMainContainer .brandNames .alphabates .brandNameItems {
+  width: 200px;
+  /* background: chocolate; */
+  margin: 5px;
+  padding: 15px;
+  font-size: 16px;
+  font-style: italic;
+  font-family: "open sans";
+  font-weight: 600;
 }
-.brandMainContainer .brandNames .alphabates .brandNameItems li{
-    list-style: none;
-    padding: 2.5px 0;
+.brandMainContainer .brandNames .alphabates .brandNameItems li {
+  list-style: none;
+  padding: 2.5px 0;
 }
-.brandMainContainer .brandNames .alphabates .brandNameItems li a{
-text-decoration: none;
-color: black;
+.brandMainContainer .brandNames .alphabates .brandNameItems li a {
+  text-decoration: none;
+  color: black;
 }
-.brandMainContainer .brandNames .alphabates .brandNameItems li a:hover{
-text-decoration: underline;
+.brandMainContainer .brandNames .alphabates .brandNameItems li a:hover {
+  text-decoration: underline;
 }
-.line{
+.line {
   height: 1px;
   width: 80%;
   margin: auto;
