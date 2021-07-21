@@ -23,9 +23,9 @@ We have added all the functionalities, animation, products, checkout, payments e
 
 ## Contributor:
 
-* **Kumar Saurav** [ks-1007](https://github.com/ks-1007)
-* **Debasish Ransingh** [coder605](https://github.com/coder605)
-* **Rohit Kumar** [Ransingh88](https://github.com/Ransingh88)
+* **Kumar Saurav** [ks-1007](https://github.com/ks-1007):saurav_nj2_035@masai.school
+* **Rohit Kumar** [coder605](https://github.com/coder605):debashis_nj2_082@masai.school
+* **Debasish Ransingh** [Ransingh88](https://github.com/Ransingh88):rohit_nj2_002@masai.school
 
 
 ## Technology Used:
