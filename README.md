@@ -23,9 +23,12 @@ We have added all the functionalities, animation, products, checkout, payments e
 
 ## Contributor:
 
-* **Kumar Saurav** [ks-1007](https://github.com/ks-1007)
-* **Debasish Ransingh** [coder605](https://github.com/coder605)
-* **Rohit Kumar** [Ransingh88](https://github.com/Ransingh88)
+* **Kumar Saurav** <br/> 
+  [ks-1007](https://github.com/ks-1007) | [email](saurav_nj2_035@masai.school) 
+* **Debasish Ransingh** <br/>
+  [Ransingh88](https://github.com/coder605) | [email](debasish_nj2_082@masai.school)
+* **Rohit Kumar** <br/>
+ [coder605](https://github.com/Ransingh88) | [email](rohit_nj2_002@masai.school)
 
 
 ## Technology Used:
@@ -37,15 +40,7 @@ CSS | Google Fonts [Link](https://fonts.google.com/)
 JavaScript | 
 
 
-## Usage:
- ***Step 1:***
- Head over to Code Download the zip file or clone the project([SEPHORA](https://github.com/ks-1007/Project-Sephora.git)) from CLI.<br/>
- ![Alt Text](https://github.com/ks-1007/Project-Sephora/blob/sephora-branch/github1.png) <br/>
- 
-   ***Step 2:***
-  Open the project folder, and search *sephora.html* file. Open it with any browser.<br/>
- <img src="https://github.com/ks-1007/Project-Sephora/blob/sephora-branch/github2.png" alt="Github"  height="300">
- 
-  ***Landed in Homepage:***
+## Usage: 
+  ***Landing Page:***
 
- <img src="https://github.com/ks-1007/Project-Sephora/blob/sephora-branch/github3.png" alt="Github"  height="300">
+ <img src="https://github.com/ks-1007/Project-Sephora/blob/sephora-branch/webpage.png" alt="Webpage"  width="1000">
