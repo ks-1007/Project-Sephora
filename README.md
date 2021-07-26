@@ -26,9 +26,9 @@ We have added all the functionalities, animation, products, checkout, payments e
 * **Kumar Saurav** <br/>
  [ks-1007](https://github.com/ks-1007) | [email](Saurav_nj2_035@masai.school)
 * **Debasish Ransingh** <br/> 
- [Ransingh88](https://github.com/coder605) | [email](debasish_nj2_082@masai.school)
+ [Ransingh88](https://github.com/Ransingh88) | [email](debasish_nj2_082@masai.school)
 * **Rohit Kumar** <br/>
- [coder605](https://github.com/Ransingh88) | [email](Rohit_nj2_002@masai.school)
+ [coder605](https://github.com/coder605) | [email](Rohit_nj2_002@masai.school)
 
 
 ## Technology Used:
