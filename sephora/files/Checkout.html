@@ -139,7 +139,9 @@
 
             <th>
               <tr>
-                <button class="butn" type="button">Save & Continue</button>
+                <button class="butn" type="button" onclick="success()">
+                  Save & Continue
+                </button>
               </tr>
             </th>
           </table>
@@ -157,7 +159,10 @@
 </html>
 
 <script>
-  function checkbox() {
-    window.location.href = "../index.html"
+  // function checkbox() {
+  //   window.location.href = "../index.html"
+  // }
+  function success() {
+    alert("Payment successful")
   }
 </script>
