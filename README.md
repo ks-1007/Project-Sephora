@@ -1,5 +1,5 @@
 # Project-Sephora
-
+## Demo link: https://project-sephora.vercel.app/
 ## Description:
 **India's No1 Beauty Destination. Choose From Wide Range of Beauty Products and Cosmetics. Enjoy Shopping! Grab Exciting Deals On Beauty & Cosmetic Products Only On Sephora Official India Store. Official Brand Store. Exclusive Online Store. Free Shipping. <br/><br/>
 Sephora is proud to offer our customers and affiliate partners the largest and most diverse selection of beauty products on the internet. From iconic luxury brand names, to niche interest products, to our own Sephora Collection, there is something for everyone at [Sephora.com](https://www.sephora.com/).**
